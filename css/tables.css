@@ -1,0 +1,361 @@
+.preloader__scene {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: flex;
+    background-color: #000000;
+}
+
+.loading__block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.progress {
+    width: 210px;
+    height: 8px;
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    position: relative;
+    margin-top: 15px;
+}
+
+.progress::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    background-color: #ff0000;
+    animation: progressLine 10s ease forwards;
+    border-radius: 4px;
+    width: 0;
+    transition: width 0.1s;
+}
+
+@keyframes progressLine {
+    form {
+        width: 0;
+    }
+
+    to {
+        width: calc(100% - 4px);
+    }
+}
+
+
+.table {
+    background-image: url(../images/bg-green.jpg);
+    height: calc(100dvh - 20px);
+    background-size: contain;
+    padding: 10px;
+}
+
+.table__items {
+    height: 100%;
+}
+
+.tables__exit {
+    padding: 5px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    border: 1px solid #024e1a;
+    border-radius: 25px;
+    background-color: #025c1f;
+    background-image: linear-gradient(to top, #027125, #014718);
+}
+
+.tables__exit img {
+    padding-right: 10px;
+    width: 15px;
+}
+
+.table__table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 90%;
+    padding-top: 30px;
+}
+
+.table__table-img {
+    position: relative;
+    max-width: 400px;
+    height: 80%;
+}
+
+.table__table-flop {
+    position: absolute;
+    bottom: 28vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.table__table-flop img {
+    width: 85px;
+}
+
+.table__table-flop--bank {
+    border: 1px solid #8e8d8d;
+    background-color: #3a3939;
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px 15px;
+    margin-bottom: 5px;
+}
+
+.table__table-flop--card {
+    max-width: 35px;
+    width: 100%;
+}
+
+/* --------------------------------- */
+.table__users {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    position: absolute;
+    top: 30px;
+}
+
+.table__user-top {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 115px;
+}
+
+.table__user-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+.table__user-right--left {
+    display: flex;
+    justify-content: space-between;
+    height: 80%;
+    width: 350px;
+
+}
+
+.table__user-box-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.table__user-box-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    align-self: self-end;
+}
+
+.table__user-left,
+.table__user-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 80px;
+}
+
+
+.table__user,
+.table__user-im {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.table__user-im {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.table__user-name {
+    font-weight: 700;
+}
+
+.table__user-name-im {
+    padding-bottom: 5px;
+    font-weight: 700;
+}
+
+.table__user-img,
+.table__user-img-im {
+    width: 45px;
+    height: 45px;
+    position: relative;
+    z-index: -1;
+    border: 1px solid #8e8d8d;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.table__user-img-im {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: -14px;
+    left: -39px;
+    z-index: 2;
+}
+
+.table__user-csrd--one,
+.table__user-csrd--one--im {
+    width: 15px;
+    position: absolute;
+    right: 22px;
+    bottom: 13px;
+    z-index: -1;
+}
+
+.table__user-csrd--one--im {
+    width: 35px;
+    right: 50px;
+    bottom: 22px;
+}
+
+.table__user-csrd--two,
+.table__user-csrd--two--im {
+    width: 15px;
+    position: absolute;
+    right: 5px;
+    bottom: 13px;
+    z-index: -1;
+}
+
+.table__user-csrd--two--im {
+    width: 35px;
+    right: 13px;
+    bottom: 22px;
+}
+
+.table__user-cash,
+.table__user-cash-im {
+    border: 1px solid #8e8d8d;
+    background-color: #444343;
+    border-radius: 25px;
+    padding: 2px 0;
+}
+
+.table__user-cash-im {
+    padding: 3px 14px 3px 30px;
+}
+
+.table__user-cash--text {
+    color: #03b63c;
+    font-weight: 700;
+}
+
+/* --------------------------------- */
+
+.table__buttons {
+    display: flex;
+    column-gap: 20px;
+
+}
+
+.table__btn-bg {
+    border: 0px solid transparent;
+    width: 95px;
+    height: 45px;
+    border-radius: 7px;
+    position: relative;
+    background: linear-gradient(to right, #f9f6f6, #3a3939, #f9f6f6);
+    cursor: pointer;
+}
+
+.table__btn-bg::before {
+    content: '';
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    left: 1px;
+    bottom: 1px;
+    border-radius: 6px;
+    background: linear-gradient(to top, #ff0000, #601c1c);
+}
+
+.table__btn-bg span {
+    position: relative;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* ---------------------------- */
+.table__tokens {
+    display: flex;
+    flex-direction: column;
+    height: 65%;
+    position: absolute;
+    top: 115px;
+}
+
+.table__tokens-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.table__tokens-img {
+    width: 17px;
+}
+
+.table__tokens-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.table__tokens-left-rigt {
+    display: flex;
+    justify-content: space-around;
+    height: 90%;
+    width: 280px;
+}
+
+.table__tokens-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.table__tokens-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.table__tokens-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    bottom: 80px;
+}
+
+.table__token-box {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

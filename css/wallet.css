@@ -1,0 +1,97 @@
+/* Main_Wallet wallet.thml*/
+.wallet {
+    margin-top: 220px;
+}
+
+.wallet__box {
+    position: fixed;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 451px;
+    background-color: #230505;
+    z-index: 2;
+}
+
+.wallet__items {
+    display: flex;
+    justify-content: center;
+}
+
+.wallet__item {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.wallet__img-usdt {
+    width: 50px;
+    border-radius: 100%;
+    margin-bottom: 20px;
+}
+
+.wallet__money-text {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.wallet__money {
+    font-size: 24px;
+}
+
+.wallet__balance {
+    margin-left: 15px;
+    font-size: 24px;
+}
+
+.wallet__btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.wallet__btn-text {
+    width: 160px;
+    padding: 10px 0;
+    background: linear-gradient(#5f5f5f, #313131, #5f5f5f);
+    font-size: 16px;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.wallet__transactions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.wallet__transactions-box {
+    display: flex;
+}
+
+.wallet__transactions-img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.wallet__transactions-text {
+    display: block;
+}
+
+.wallet__transactions-rtwl {
+    font-size: 14px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.wallet__transactions-date {
+    color: #868686;
+}
+
+.wallet__transactions-money {
+    font-size: 14px;
+    font-weight: 700;
+}
