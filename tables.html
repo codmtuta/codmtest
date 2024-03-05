@@ -7,8 +7,7 @@
   <title>Poker Club</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Nunito:wght@200;400;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lunasima:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/styles-main.css">
   <link rel="shortcut icon" href="images/poker.ico" type="image/x-icon">
@@ -31,13 +30,67 @@
     <main class="main" style="padding: 0;">
       <div class="container">
 
+        <div class="table__info-box">
+          <div class="table__info-window">
+
+            <div class="table__info-close--block">
+              <img class="table__info-close" src="images/icons/close.svg" alt="">
+            </div>
+
+            <div class="table__info-tables table__info-items">
+              <h2 class="table__info-title">Название стола</h2>
+              <div class="table__info-item">
+                <p class="table__info-text">Hold’em для своих</p>
+              </div>
+            </div>
+
+            <div class="table__info-players table__info-items">
+              <h2 class="table__info-title">Количество игроков</h2>
+              <div class="table__info-item">
+                <p class="table__info-text">1/8 (min 2)</p>
+              </div>
+            </div>
+
+            <div class="table__info-buy-in table__info-items">
+              <h2 class="table__info-title">Buy-in</h2>
+              <div class="table__info-item  table__info-start">
+                <p class="table__info-text">100</p>
+                -<p class="table__info-text">200</p>
+              </div>
+            </div>
+
+            <div class="table__info-limit table__info-items">
+              <h2 class="table__info-title">Лимит</h2>
+              <div class="table__info-item">
+                <p class="table__info-text">No Limit</p>
+              </div>
+            </div>
+
+            <div class="table__info-code table__info-items">
+              <h2 class="table__info-title">Отправить код приглашения</h2>
+              <div class="table__info-input--box">
+                <input class="table__info-input" type="number" placeholder="7777" disabled>
+                <img class="table__info-img" src="images/icons/arrow-share.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="table__info"></div>
+        </div>
+
+
         <div class="table">
 
           <div class="table__items">
-            <a class="tables__exit" href="poker.html">
-              <img src="images/icons/exit-left.svg" alt="exit">
-              <p>ПОКИНУТЬ СТОЛ</p>
-            </a>
+
+            <div class="tables__btn-top">
+              <a class="tables__exit" href="poker.html">
+                <img src="images/icons/exit-left.svg" alt="exit">
+              </a>
+
+              <div class="table__info-share">
+                <img src="images/icons/share.svg" alt="exit">
+              </div>
+            </div>
 
             <div class="table__table">
               <img class="table__table-img" src="images/table.png" alt="table">
@@ -58,15 +111,23 @@
                       <img class="table__user-csrd--two" src="images/card/shirt.png" alt="shirt">
                     </div>
                   </div>
-                  <div class="table__tokens-box">
+
+                  <!-- <div class="table__user">
+                    <div class="table__user-name">
+                      <span>Ожидание</span>
+                    </div>
+                    <img class="table__user-img" src="images/tokens/empty.png" alt="ava">
+                    <div class="table__user-cash">
+                      <p class="table__user-empty">игрока</p>
+                    </div>
+                  </div> -->
+
+                  <!-- <div class="table__tokens-box">
                     <div class="table__tokens-top">
                       <img class="table__tokens-img" src="images/tokens/token-bank.png" alt="">
                       <span>$ 100</span>
                     </div>
-                    <!-- <img class="table__tokens-img" src="images/tokens/dealer-bank.png" alt=""> -->
-                  </div>
-
-
+                  </div> -->
 
                   <div class="table__table-flop">
                     <img src="images/tokens/token-jackpot.png" alt="">
@@ -289,7 +350,7 @@
     </main>
 
   </div>
-
+  <script type="text/javascript" src="js/windowtest.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 </body>
 

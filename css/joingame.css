@@ -1,0 +1,127 @@
+.joingame__window-box {
+    display: none;
+}
+
+.joingame__blur {
+    background-color: #020b168a;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(5px);
+}
+
+.joingame__window {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #04233db2;
+    border: 1px solid #072a47;
+    border-radius: 15px;
+    padding: 30px 15px;
+    z-index: 1;
+}
+
+.joingame__window-title {
+    font-size: 20px;
+}
+
+.joingame__window-input {
+    border: 1px solid #5c5b5b;
+    border-radius: 5px;
+    background-color: #1e375079;
+    color: #fff;
+    outline: none;
+    text-indent: 5px;
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.joingame__window-input:focus {
+    font-family: "Lunasima", sans-serif;
+    outline: 2px solid #315980;
+    background-color: #1e375079;
+    color: #fff;
+}
+
+.joingame__window-input:valid {
+    font-family: "Lunasima", sans-serif;
+}
+
+.joingame__window-btn {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.joingame {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 75vh;
+}
+
+.joingame__form {
+    margin: 20px 0 10px;
+}
+
+.joingame__items {
+    margin-bottom: 20px;
+}
+
+.joingame__title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.joingame__item {
+    display: flex;
+    justify-content: space-between;
+    background: repeating-linear-gradient(45deg, #343b6b, #343b6b 10px, #2d3770 10px, #2d3770 20px);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.joingame__item-start {
+    justify-content: start;
+}
+
+.joingame__text {
+    font-size: 16px;
+    padding: 0 5px;
+}
+
+
+.joingame__back-create {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.joingame__window-back,
+.joingame__window-ok,
+.joingame__back,
+.joingame__go {
+    border: none;
+    border-radius: 5px;
+    max-width: 145px;
+    width: 100vw;
+    height: 35px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+}
+
+.joingame__window-back,
+.joingame__back {
+    background: repeating-linear-gradient(45deg, #555972, #555972 10px, #41465f 10px, #41465f 20px);
+}
+
+.joingame__window-ok,
+.joingame__go {
+    background: repeating-linear-gradient(45deg, #5c69c0, #5c69c0 10px, #43509b 10px, #43509b 20px);
+}

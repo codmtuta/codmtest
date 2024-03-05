@@ -3,53 +3,233 @@
     margin: 20px 0;
 }
 
+.account__items {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
 .account__item {
-    padding: 20px;
-    border: 1px solid #636161;
-    border-radius: 10px;
-    background-color: #00000075;
-    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    background: repeating-linear-gradient(45deg,
+            #606dbc,
+            #606dbc 10px,
+            #465298 10px,
+            #465298 20px);
 }
 
-.account__img-profile {
-    width: 50px;
-    border-radius: 100%;
+.account__item-counter {
+    background: repeating-linear-gradient(45deg,
+            #bc6060,
+            #bc6060 10px,
+            #984646 10px,
+            #984646 20px);
+
+    text-shadow:
+        -1px -1px 0 #691212,
+        1px -1px 0 #691212,
+        -1px 1px 0 #691212,
+        1px 1px 0 #691212;
 }
 
-.account__text {
-    display: block;
-    margin-left: 15px;
-    overflow: hidden;
-    width: 400px;
+.account__item-referrals {
+    background: repeating-linear-gradient(45deg,
+            #bcae60,
+            #bcae60 10px,
+            #989046 10px,
+            #989046 20px);
+}
+
+.account__item-margin {
+    margin-top: 20px;
+    background: repeating-linear-gradient(45deg,
+            #589b4f,
+            #589b4f 10px,
+            #4c7937 10px,
+            #4c7937 20px);
+}
+
+.account__ava {
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.account__ava-img {
+    border-radius: 50%;
+    width: 65px;
+    margin-right: 10px;
+}
+
+.account__user-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-right: 10px;
+    width: 60%;
 }
 
 .account__username {
-    padding-bottom: 5px;
-    font-size: 24px;
-}
-
-.account__id {
-    font-size: 16px;
-}
-
-.account__img-usdt {
-    width: 50px;
-    border-radius: 100%;
-}
-
-.account__money-text {
     display: flex;
-    width: 400px;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px 10px;
+    height: 20px;
+    backdrop-filter: blur(5px);
+    max-width: 100%;
 }
 
-.account__money {
-    margin-left: 15px;
-    font-size: 24px;
+.account__username-text {
+    font-size: 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
-.account__balance {
-    font-size: 24px;
-    padding-left: 10px;
+.account__lvl-box {
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 5px 10px;
+    height: 20px;
+    backdrop-filter: blur(5px);
+}
+
+.account__lvl-text {
+    font-size: 20px;
+}
+
+.account__rank-img {
+    width: 65px;
+}
+
+.account__counter-text {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.account__counter-poker {
+    display: flex;
+    font-size: 20px;
+}
+
+.account__counter-knb {
+    display: flex;
+    font-size: 20px;
+}
+
+.account__referrals-text {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.account__referral-box {
+    position: relative;
+}
+
+.account__referrals-img {
+    position: absolute;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid #989046;
+    bottom: -17px;
+}
+
+.account__referrals-img:nth-child(1) {
+    left: 0px;
+    z-index: 2;
+}
+
+.account__referrals-img:nth-child(2) {
+    left: 20px;
+    z-index: 1;
+}
+
+.account__referrals-img:nth-child(3) {
+    left: 40px;
+}
+
+.account__referrals-img--text {
+    position: absolute;
+    left: 75px;
+    bottom: -10px;
+    font-size: 20px;
+    text-shadow:
+        -1px -1px 0 #696812,
+        1px -1px 0 #696812,
+        -1px 1px 0 #696012,
+        1px 1px 0 #696012;
+}
+
+.account__income {
+    display: flex;
+    font-size: 20px;
+    text-shadow:
+        -1px -1px 0 #696812,
+        1px -1px 0 #696812,
+        -1px 1px 0 #696012,
+        1px 1px 0 #696012;
+}
+
+.account__share-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.account__share-text {
+    font-size: 14px;
+    font-weight: 700;
+    text-shadow:
+        -1px -1px 0 #126941,
+        1px -1px 0 #126941,
+        -1px 1px 0 #126941,
+        1px 1px 0 #126941;
+}
+
+.account__share-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.account__share-info {
+    font-size: 10px;
+    text-align: center;
+    width: 220px;
+    text-shadow:
+        -1px -1px 0 #126941,
+        1px -1px 0 #126941,
+        -1px 1px 0 #126941,
+        1px 1px 0 #126941;
+}
+
+
+.account__share-btn {
+    border-radius: 50%;
+    border: none;
+    background: #406c91;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: colorChange 0.3s infinite alternate;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: #a84242;
+    }
+
+    100% {
+        background-color: #2d6eaa;
+    }
 }

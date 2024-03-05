@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lunasima:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/nouislider.min.css">
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/styles-main.css">
   <link rel="shortcut icon" href="images/poker.ico" type="image/x-icon">
@@ -46,78 +47,59 @@
 
     <main class="main">
       <div class="container">
-
-        <div class="account">
-          <div class="account__items">
-            <div class="account__item">
-              <div class="account__ava">
-                <img class="account__ava-img" src="images/ava.jpg" alt="ava">
-                <div class="account__user-box">
-                  <div class="account__username">
-                    <p class="account__username-text">UserName</p>
-                  </div>
-                  <div class="account__lvl-box">
-                    <p class="account__lvl-text">LVL</p>
-                    <p class="account__lvl-text">1</p>
-                  </div>
-                </div>
-              </div>
-              <div class="account__rank">
-                <img class="account__rank-img" src="images/rank/rank-silver.png" alt="ava">
-              </div>
+        <div class="joingame__window-box">
+          <div class="joingame__window">
+            <h2 class="joingame__window-title">Введите пароль</h2>
+            <input class="joingame__window-input" type="number">
+            <div class="joingame__window-btn">
+              <button class="joingame__window-back">Назад</button>
+              <button class="joingame__window-ok">Ок</button>
             </div>
-
-            <div class="account__counter">
-              <p class="account__counter-text">Счетчик игр</p>
-              <div class="account__item account__item-counter">
-                <div class="account__counter-poker">
-                  <p class="account__counter-game">Poker:</p>
-                  <p class="account__counter-number format__number">22</p>
-                </div>
-                <div class="account__counter-knb">
-                  <p class="account__counter-game">КНБ:</p>
-                  <p class="account__counter-number format__number">13</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="account__referrals">
-              <div class="account__referrals-text">Рефералы</div>
-              <div class="account__item account__item-referrals">
-                <div class="account__referral-box">
-                  <img class="account__referrals-img" src="images/faces/ava-1.jpg" alt="">
-                  <img class="account__referrals-img" src="images/faces/ava-2.jpg" alt="">
-                  <img class="account__referrals-img" src="images/faces/ava-3.jpg" alt="">
-                  <p class="account__referrals-img--text format__number">984</p>
-                </div>
-                <div class="account__income">
-                  <p class="account__income-text">Доход:</p>
-                  <p class="account__income-text format__number">21500
-                  <p>$</p>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="account__share">
-              <div class="account__item account__item-margin">
-                <div class="account__share-box">
-                  <div class="account__share-title">
-                    <p class="account__share-text">Приглашай друзей, получай кешбек</p>
-                  </div>
-                  <p class="account__share-info">
-                    Как только он сделает свой первый депозит на сумму от 100$
-                    и использует его для ставок вы получите вознаграждение.
-                  </p>
-                </div>
-                <button class="account__share-btn">
-                  <img src="images/icons/arrow-share.svg" alt="">
-                </button>
-              </div>
-            </div>
-
           </div>
+          <div class="joingame__blur"></div>
         </div>
+        <form class="joingame">
+
+          <div class="joingame__form">
+            <div class="joingame__tables joingame__items">
+              <h2 class="joingame__title">Название стола</h2>
+              <div class="joingame__item">
+                <p class="joingame__text">Hold’em для своих</p>
+                <img class="joingame__img" src="images/icons/lock.svg" alt="">
+              </div>
+            </div>
+
+            <div class="joingame__players joingame__items">
+              <h2 class="joingame__title">Количество игроков</h2>
+              <div class="joingame__item">
+                <p class="joingame__text">1/8 (min 2)</p>
+              </div>
+            </div>
+
+            <div class="joingame__buy-in joingame__items">
+              <h2 class="joingame__title">Buy-in</h2>
+              <div class="joingame__item joingame__item-start">
+                <p class="joingame__text">100</p>
+                -<p class="joingame__text">200</p>
+              </div>
+            </div>
+
+            <div class="joingame__limit joingame__items">
+              <h2 class="joingame__title">Лимит</h2>
+              <div class="joingame__item">
+                <p class="joingame__text">No Limit</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="joingame__back-create">
+            <a href="poker.html">
+              <button class="joingame__back" type="button">Назад</button>
+            </a>
+            <button class="joingame__go" type="button">Перейти к игре</button>
+          </div>
+
+        </form>
 
       </div>
     </main>
@@ -149,7 +131,7 @@
                 </a>
               </li>
 
-              <li class="navbat__item active">
+              <li class="navbat__item">
                 <a class="navbar__link" href="account.html">
                   <img class="navbar__img" src="images/icons/account.svg" alt="account">
                   <p class="navbar__text">Профиль</p>
@@ -165,7 +147,7 @@
     </footer>
 
   </div>
-
+  <script type="text/javascript" src="js/windowtest.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 </body>
 

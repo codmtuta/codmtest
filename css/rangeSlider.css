@@ -1,6 +1,6 @@
 .range__filter {
     display: block;
-    margin: 10px 0;
+    margin-bottom: 15px;
 }
 
 .range__filter-item {
@@ -37,7 +37,7 @@
 }
 
 .noUi-connect {
-    background: linear-gradient(#FFD700, #8d6707);
+    background: #226eb9;
 }
 
 .noUi-handle::after,
@@ -49,7 +49,7 @@
     box-shadow: none;
     border-radius: 50%;
     background-color: #292828;
-    border: 5px solid #ceaf02;
+    border: 5px solid #226eb9;
 }
 
 .noUi-horizontal .noUi-handle {

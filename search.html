@@ -7,8 +7,7 @@
     <title>Poker Club</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Nunito:wght@200;400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lunasima:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/nouislider.min.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/styles-main.css">
@@ -33,8 +32,8 @@
                     <div class="header__box">
                         <a class="header__box-money" href="wallet.html">
                             <img class="header__box-img" src="images/icons/color-usdt.svg" alt="usdt">
-                            <span class="header__box-balance">10000</span>
-                            <span class="header__box-btn">+</span>
+                            <span class="header__box-balance format__number">10000</span>
+                            <img class="header__box-btn" src="images/icons/plus.svg" alt="">
                         </a>
 
                         <div class="header__ava">
@@ -53,43 +52,47 @@
 
                 <form class="search__poker">
 
-                    <div class="search__players">
-                        <span class="search__players-title">Количество игроков:</span>
-                        <div class="search__players-btn">
-                            <button class="colorBtn players-btn" type="button" data-group="players">Один на
-                                один</button>
-                            <button class="colorBtn players-btn" type="button" data-group="players">3-6 макс</button>
-                            <button class="colorBtn players-btn" type="button" data-group="players">3-8 макс</button>
-                        </div>
-                    </div>
-
-                    <div class="range__filter">
-                        <div class='range__filter-item'>
-                            <span class="range__filter-title">Buy-in: </span>
-
-                            <div class='range__filter-inputs'>
-                                <input class="range__filter-input" type='number' min='20' max='400' placeholder="20"
-                                    readonly id="input-0">
-                                - <input class="range__filter-input" type='number' min='20' max='400' placeholder="400"
-                                    readonly id="input-1">
+                    <div class="search__filters">
+                        <div class="search__players">
+                            <span class="search__players-title">Количество игроков:</span>
+                            <div class="search__players-btn">
+                                <button class="colorBtn players-btn" type="button" data-group="players">Один на
+                                    один</button>
+                                <button class="colorBtn players-btn" type="button" data-group="players">3-6
+                                    макс</button>
+                                <button class="colorBtn players-btn" type="button" data-group="players">3-8
+                                    макс</button>
                             </div>
                         </div>
-                        <div class="range__filter-slider" id="range-slider"></div>
-                    </div>
 
-                    <div class="search__limit">
-                        <span class="search__limit-title">Лимит:</span>
-                        <div class="search__limit-btn">
-                            <button class="colorBtn limit-btn" type="button" data-group="limit">limit</button>
-                            <button class="colorBtn limit-btn" type="button" data-group="limit">Pot Limit</button>
-                            <button class="colorBtn limit-btn" type="button" data-group="limit">No Limit</button>
+                        <div class="range__filter">
+                            <div class='range__filter-item'>
+                                <span class="range__filter-title">Buy-in: </span>
+
+                                <div class='range__filter-inputs'>
+                                    <input class="range__filter-input" type='number' min='20' max='400' placeholder="20"
+                                        readonly id="input-0">
+                                    - <input class="range__filter-input" type='number' min='20' max='400'
+                                        placeholder="400" readonly id="input-1">
+                                </div>
+                            </div>
+                            <div class="range__filter-slider" id="range-slider"></div>
                         </div>
-                    </div>
 
-                    <div class="search__table">
-                        <span class="search__table-title">Код игры или название стола:</span>
-                        <input class="search__table-input" type="text"
-                            placeholder="Введите код игры или название стола">
+                        <div class="search__limit">
+                            <span class="search__limit-title">Лимит:</span>
+                            <div class="search__limit-btn">
+                                <button class="colorBtn limit-btn" type="button" data-group="limit">limit</button>
+                                <button class="colorBtn limit-btn" type="button" data-group="limit">Pot Limit</button>
+                                <button class="colorBtn limit-btn" type="button" data-group="limit">No Limit</button>
+                            </div>
+                        </div>
+
+                        <div class="search__table">
+                            <span class="search__table-title">Код игры или название стола:</span>
+                            <input class="search__table-input" type="text"
+                                placeholder="Введите код игры или название стола">
+                        </div>
                     </div>
 
                     <div class="search__back-create">
@@ -138,54 +141,9 @@
                                 </a>
                             </li>
 
-                            <li class="navbat__item">
-                                <div class="menu__btn">
-                                    <img class="navbar__img" src="images/icons/burger-menu.svg" alt="menu">
-                                    <p class="navbar__text">Меню</p>
-                                </div>
-                            </li>
                         </ul>
                     </div>
                 </nav>
-
-                <div class="menu__items">
-                    <ul class="menu">
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">
-                                <img class="menu__img" src="images/icons/setting.svg" alt="menu">
-                                <p>Меню1</p>
-                            </a>
-                        </li>
-
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">
-                                <img class="menu__img" src="images/icons/setting.svg" alt="menu">
-                                <p>Меню2</p>
-                            </a>
-                        </li>
-
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">
-                                <img class="menu__img" src="images/icons/setting.svg" alt="menu">
-                                <p>Меню3</p>
-                            </a>
-                        </li>
-
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">
-                                <img class="menu__img" src="images/icons/setting.svg" alt="menu">
-                                <p>Меню4</p>
-                            </a>
-                        </li>
-
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">
-                                <img class="menu__img" src="images/icons/setting.svg" alt="menu">
-                                <p>Меню5</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
 
             </div>
 

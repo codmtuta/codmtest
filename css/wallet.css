@@ -1,21 +1,18 @@
 /* Main_Wallet wallet.thml*/
 .wallet {
-    margin-top: 220px;
+    overflow: hidden;
 }
 
 .wallet__box {
-    position: fixed;
-    top: 70px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 451px;
-    background-color: #230505;
-    z-index: 2;
+    max-width: 400px;
+    background-color: transparent;
+    margin: 0 auto;
 }
 
 .wallet__items {
     display: flex;
     justify-content: center;
+    padding-bottom: 20px;
 }
 
 .wallet__item {
@@ -25,13 +22,11 @@
 
 .wallet__img-usdt {
     width: 50px;
-    border-radius: 100%;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .wallet__money-text {
     display: flex;
-    margin-bottom: 30px;
 }
 
 .wallet__money {
@@ -46,52 +41,79 @@
 .wallet__btn {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
     gap: 20px;
 }
 
 .wallet__btn-text {
     width: 160px;
     padding: 10px 0;
-    background: linear-gradient(#5f5f5f, #313131, #5f5f5f);
     font-size: 16px;
     color: #fff;
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
     cursor: pointer;
 }
 
+.wallet__btn-conclusion {
+    background: repeating-linear-gradient(45deg,
+            #bc6060,
+            #bc6060 10px,
+            #984646 10px,
+            #984646 20px);
+}
+
+.wallet__btn-refill {
+    background: repeating-linear-gradient(45deg,
+            #60bc86,
+            #60bc86 10px,
+            #469879 10px,
+            #469879 20px);
+}
+
 .wallet__transactions {
+    max-height: 480px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.wallet__transactions::-webkit-scrollbar {
+    display: none;
+}
+
+.wallet__transaction {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin: 0 10px 15px;
 }
 
-.wallet__transactions-box {
+.wallet__transaction-box {
     display: flex;
 }
 
-.wallet__transactions-img {
+.wallet__transaction-img {
     width: 20px;
     margin-right: 10px;
 }
 
-.wallet__transactions-text {
+.wallet__transaction-text {
     display: block;
 }
 
-.wallet__transactions-rtwl {
+.wallet__transaction-rtwl {
     font-size: 14px;
     font-weight: 700;
     padding-bottom: 5px;
 }
 
-.wallet__transactions-date {
+.wallet__transaction-date {
     color: #868686;
 }
 
-.wallet__transactions-money {
+.wallet__transaction-money {
     font-size: 14px;
     font-weight: 700;
 }

@@ -38,10 +38,10 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Автоматическое переключение слайдов
-    setInterval(function () {
-        currentSlide = (currentSlide + 1) % totalSlides;
-        goToSlide(currentSlide);
-    }, 4000);
+    // setInterval(function () {
+    //     currentSlide = (currentSlide + 1) % totalSlides;
+    //     goToSlide(currentSlide);
+    // }, 4000);
 
     // Добавляем обработчики свайпа
     let startX;

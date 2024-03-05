@@ -7,8 +7,7 @@
   <title>Poker Club</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Nunito:wght@200;400;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lunasima:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/styles-main.css">
   <link rel="shortcut icon" href="images/poker.ico" type="image/x-icon">
@@ -30,8 +29,8 @@
           <div class="header__box">
             <a class="header__box-money" href="wallet.html">
               <img class="header__box-img" src="images/icons/color-usdt.svg" alt="usdt">
-              <span class="header__box-balance">10000</span>
-              <span class="header__box-btn">+</span>
+              <span class="header__box-balance format__number">10000</span>
+              <img class="header__box-btn" src="images/icons/plus.svg" alt="">
             </a>
 
             <div class="header__ava">
@@ -51,7 +50,7 @@
       </div>
     </header>
 
-    <main class="main" style="padding: 100px 15px;">
+    <main class="main" style="padding: 115px 15px;">
       <div class="container">
 
         <div class="tables">
@@ -70,8 +69,10 @@
             <div class="tables__buy">
               <p>Buy-in: $100</p>
             </div>
-            <a href="tables.html">
-              <button class="tables__btn">Присоединиться</button>
+            <a href="joingame.html">
+              <button class="tables__btn">
+                <div class="tables__btn-animation">Присоединиться</div>
+              </button>
             </a>
           </div>
         </div>
@@ -91,7 +92,9 @@
             <div class="tables__buy">
               <p>Buy-in: $50</p>
             </div>
-            <button class="tables__btn">Присоединиться</button>
+            <button class="tables__btn">
+              <div class="tables__btn-animation">Присоединиться</div>
+            </button>
           </div>
         </div>
 
@@ -111,7 +114,9 @@
             <div class="tables__buy">
               <p>Buy-in: $200</p>
             </div>
-            <button class="tables__btn">Присоединиться</button>
+            <button class="tables__btn">
+              <div class="tables__btn-animation">Присоединиться</div>
+            </button>
           </div>
         </div>
 
@@ -130,7 +135,9 @@
             <div class="tables__buy">
               <p>Buy-in: $500</p>
             </div>
-            <button class="tables__btn">Присоединиться</button>
+            <button class="tables__btn">
+              <div class="tables__btn-animation">Присоединиться</div>
+            </button>
           </div>
         </div>
 
@@ -149,7 +156,9 @@
             <div class="tables__buy">
               <p>Buy-in: $200</p>
             </div>
-            <button class="tables__btn">Присоединиться</button>
+            <button class="tables__btn">
+              <div class="tables__btn-animation">Присоединиться</div>
+            </button>
           </div>
         </div>
 
@@ -168,7 +177,9 @@
             <div class="tables__buy">
               <p>Buy-in: $100</p>
             </div>
-            <button class="tables__btn">Присоединиться</button>
+            <button class="tables__btn">
+              <div class="tables__btn-animation">Присоединиться</div>
+            </button>
           </div>
         </div>
 
@@ -187,7 +198,9 @@
             <div class="tables__buy">
               <p>Buy-in: $50</p>
             </div>
-            <button class="tables__btn">Присоединиться</button>
+            <button class="tables__btn">
+              <div class="tables__btn-animation">Присоединиться</div>
+            </button>
           </div>
         </div>
 
@@ -206,7 +219,9 @@
             <div class="tables__buy">
               <p>Buy-in: $100</p>
             </div>
-            <button class="tables__btn">Присоединиться</button>
+            <button class="tables__btn">
+              <div class="tables__btn-animation">Присоединиться</div>
+            </button>
           </div>
         </div>
 
@@ -219,11 +234,9 @@
         <nav class="navbar">
 
           <div class="tables__new-game">
-            <a href="newpoker.html"><button class="tables__new-game--btn">+</button></a>
-          </div>
-
-          <div class="tables__new-game">
-            <a href="newpoker.html"><button class="tables__new-game--btn">+</button></a>
+            <a href="newpoker.html">
+              <img class="tables__new-game--btn" src="images/icons/button-plus.svg" alt="">
+            </a>
           </div>
 
           <div class="navbar__items">
@@ -257,54 +270,9 @@
                 </a>
               </li>
 
-              <li class="navbat__item">
-                <div class="menu__btn">
-                  <img class="navbar__img" src="images/icons/burger-menu.svg" alt="menu">
-                  <p class="navbar__text">Меню</p>
-                </div>
-              </li>
             </ul>
           </div>
         </nav>
-
-        <div class="menu__items">
-          <ul class="menu">
-            <li class="menu__item">
-              <a href="#" class="menu__link">
-                <img class="menu__img" src="images/icons/setting.svg" alt="menu">
-                <p>Меню1</p>
-              </a>
-            </li>
-
-            <li class="menu__item">
-              <a href="#" class="menu__link">
-                <img class="menu__img" src="images/icons/setting.svg" alt="menu">
-                <p>Меню2</p>
-              </a>
-            </li>
-
-            <li class="menu__item">
-              <a href="#" class="menu__link">
-                <img class="menu__img" src="images/icons/setting.svg" alt="menu">
-                <p>Меню3</p>
-              </a>
-            </li>
-
-            <li class="menu__item">
-              <a href="#" class="menu__link">
-                <img class="menu__img" src="images/icons/setting.svg" alt="menu">
-                <p>Меню4</p>
-              </a>
-            </li>
-
-            <li class="menu__item">
-              <a href="#" class="menu__link">
-                <img class="menu__img" src="images/icons/setting.svg" alt="menu">
-                <p>Меню5</p>
-              </a>
-            </li>
-          </ul>
-        </div>
 
       </div>
 

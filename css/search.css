@@ -7,11 +7,15 @@
     height: 75vh;
 }
 
+.search__filters {
+    margin: 20px 0 10px;
+}
+
 
 .search__players,
 .search__limit,
 .search__table {
-    margin: 10px 0;
+    margin-bottom: 20px;
 }
 
 .search__players-btn,
@@ -23,24 +27,24 @@
 
 .colorBtn {
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     max-width: 95px;
     width: 100%;
     height: 40px;
-    background: linear-gradient(#292929, #000, #292929);
+    background: #5f5f5f;
     color: #fff;
     font-weight: 700;
     text-align: center;
 }
 
 .clicked {
-    background: linear-gradient(#FFD700, #8d6707, #FFD700);
+    background: #226eb9;
 }
 
 .search__table-input {
-    border: none;
-    border-radius: 10px;
-    background-color: #aaa8a873;
+    border: 1px solid #5c5b5b;
+    border-radius: 5px;
+    background-color: #1e375079;
     color: #fff;
     outline: none;
     text-indent: 5px;
@@ -51,16 +55,19 @@
 }
 
 .search__table-input:valid {
-    font-family: 'Nunito', sans-serif;
+    font-family: "Lunasima", sans-serif;
 }
 
 .search__table-input:focus {
-    outline: 2px solid #8b6707;
+    font-family: "Lunasima", sans-serif;
+    outline: 2px solid #315980;
+    background-color: #1e375079;
+    color: #fff;
 }
 
 .search__table-input::placeholder {
     color: #bebebe77;
-    font-family: 'Nunito', sans-serif;
+    font-family: "Lunasima", sans-serif;
 }
 
 .search__back-create {
@@ -72,7 +79,7 @@
 .search__back,
 .search__create {
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     max-width: 145px;
     width: 100vw;
     height: 35px;
@@ -82,9 +89,9 @@
 }
 
 .search__back {
-    background: linear-gradient(#5f5f5f, #313131, #5f5f5f);
+    background: repeating-linear-gradient(45deg, #555972, #555972 10px, #41465f 10px, #41465f 20px);
 }
 
 .search__create {
-    background: linear-gradient(#FFD700, #8d6707, #FFD700);
+    background: repeating-linear-gradient(45deg, #5c69c0, #5c69c0 10px, #43509b 10px, #43509b 20px);
 }
