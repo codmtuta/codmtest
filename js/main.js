@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-
-
     window.addEventListener('load', function () {
         let preloader = document.querySelector('.preloader__scene');
         if (preloader) {
@@ -45,29 +43,24 @@ document.addEventListener('DOMContentLoaded', function () {
         element.textContent = formattedNumber + suffix;
     });
 
-    // Спинер
+    const spinnerImage = new Image();
+    spinnerImage.src = '../images/icons/spinner.svg';
+
     const buttons = document.querySelectorAll('.spiner__btn');
-    const spinners = document.querySelectorAll('.spinner__img');
-    const spinerCont = document.querySelectorAll('.spinner__container');
 
-    buttons.forEach((button, index) => {
+    buttons.forEach((button) => {
         button.addEventListener('click', function () {
-            button.disabled = true;
-            spinerCont.classList.add('active');
-            spinners[index].style.display = 'inline-block';
-
-            window.addEventListener('beforeunload', function () {
-                button.disabled = true;
-                spinners[index].style.display = 'inline-block';
+            buttons.forEach((btn) => {
+                btn.disabled = true;
             });
+            button.classList.add('loading');
+            const innerDiv = button.querySelector('div');
+            if (innerDiv) {
+                innerDiv.classList.add('spinner__container');
+            }
+            // window.location.href = 'tables.html'
         });
     });
-
-
-
-
-
-
 
     // Open/Close BURGER and no scroll
     // const menuBtn = document.querySelector('.navbar__nav');
