@@ -25,16 +25,66 @@
 
 .account__item-counter {
     background: repeating-linear-gradient(45deg,
-            #bc6060,
-            #bc6060 10px,
-            #984646 10px,
-            #984646 20px);
+            #c95353,
+            #c95353 10px,
+            #803535 10px,
+            #803535 20px);
 
     text-shadow:
         -1px -1px 0 #691212,
         1px -1px 0 #691212,
         -1px 1px 0 #691212,
         1px 1px 0 #691212;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 0;
+    padding: 5px 15px;
+}
+
+.account__counter-box {
+    background: repeating-linear-gradient(45deg,
+            #bc6060,
+            #bc6060 10px,
+            #984646 10px,
+            #984646 20px);
+    background-position: 1px;
+    background-size: calc(100% + 22px);
+    text-shadow:
+        -1px -1px 0 #691212,
+        1px -1px 0 #691212,
+        -1px 1px 0 #691212,
+        1px 1px 0 #691212;
+    border-radius: 0 0 5px 5px;
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
+
+.account__counter-list {
+    padding: 0px 20px;
+}
+
+.account__counter-list li {
+    padding-bottom: 15px;
+}
+
+.account__counter-title {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.account__counter-text {
+    font-size: 20px;
+}
+
+.account__counter-poker {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.account__counter-knb {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
 }
 
 .account__item-referrals {
@@ -109,21 +159,6 @@
     width: 65px;
 }
 
-.account__counter-text {
-    font-size: 20px;
-    margin-bottom: 5px;
-}
-
-.account__counter-poker {
-    display: flex;
-    font-size: 20px;
-}
-
-.account__counter-knb {
-    display: flex;
-    font-size: 20px;
-}
-
 .account__referrals-text {
     font-size: 20px;
     margin-bottom: 5px;
@@ -167,14 +202,16 @@
         1px 1px 0 #696012;
 }
 
-.account__income {
-    display: flex;
-    font-size: 20px;
-    text-shadow:
-        -1px -1px 0 #696812,
-        1px -1px 0 #696812,
-        -1px 1px 0 #696012,
-        1px 1px 0 #696012;
+.account__income-btn {
+    background: repeating-linear-gradient(45deg, #696812, #696812 10px, #696812 10px, #696812 20px);
+    border: none;
+    border-radius: 5px;
+    max-width: 120px;
+    width: 100vw;
+    height: 35px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
 }
 
 .account__share-title {

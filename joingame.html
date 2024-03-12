@@ -47,21 +47,12 @@
 
     <main class="main">
       <div class="container">
-        <div class="joingame__window-box">
-          <div class="joingame__window">
-            <h2 class="joingame__window-title">Введите пароль</h2>
-            <input class="joingame__window-input" type="number">
-            <div class="joingame__window-btn">
-              <button class="joingame__window-back">
-                <div>Назад</div>
-              </button>
-              <button class="joingame__window-ok">
-                <div>Ок</div>
-              </button>
-            </div>
-          </div>
-          <div class="joingame__blur"></div>
-        </div>
+
+
+
+
+
+
         <form class="joingame">
           <div class="joingame__form">
             <div class="joingame__tables joingame__items">
@@ -79,20 +70,26 @@
               </div>
             </div>
 
-            <div class="joingame__buy-in joingame__items">
-              <h2 class="joingame__title">Buy-in</h2>
-              <div class="joingame__item joingame__item-start">
-                <p class="joingame__text">100</p>
-                -<p class="joingame__text">200</p>
-              </div>
-            </div>
-
             <div class="joingame__limit joingame__items">
               <h2 class="joingame__title">Лимит</h2>
               <div class="joingame__item">
                 <p class="joingame__text">No Limit</p>
               </div>
             </div>
+
+            <div class="joingame__buy-in joingame__items">
+              <h2 class="joingame__title">Buy-in</h2>
+              <div class="joingame__item joingame__buy-in--info">
+                <div class="joingame__buy-in--box">
+                  <span class="joingame__buy-in--min">min 100</span>
+                  <p class="joingame__buy-in--current">Buy-in: <span id="buyInValue">100</span></p>
+                  <span class="joingame__buy-in--max">max 1000</span>
+                </div>
+                <input class="joingame__buy-in--slider" type="range" min="100" max="1000" value="500">
+                <div class="joingame__buy-in--fill" id="buyInSlider"></div>
+              </div>
+            </div>
+
           </div>
 
           <div class="joingame__back-create">
@@ -107,6 +104,22 @@
           </div>
 
         </form>
+
+        <div class="joingame__window-box">
+          <div class="joingame__window">
+            <h2 class="joingame__window-title">Введите пароль</h2>
+            <input class="joingame__window-input" type="number">
+            <div class="joingame__window-btn">
+              <button class="joingame__window-back">
+                <div>Назад</div>
+              </button>
+              <button class="joingame__window-ok">
+                <div>Ок</div>
+              </button>
+            </div>
+          </div>
+          <div class="joingame__blur"></div>
+        </div>
 
       </div>
     </main>
@@ -154,7 +167,8 @@
     </footer>
 
   </div>
-  <script type="text/javascript" src="js/windowtest.js"></script>
+  <script type="text/javascript" src="js/nouislider.min.js"></script>
+  <script type="text/javascript" src="js/buy-inRangeSlider.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 </body>
 

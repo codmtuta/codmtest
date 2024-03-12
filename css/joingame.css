@@ -1,3 +1,97 @@
+.joingame {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 75vh;
+}
+
+.joingame__form {
+    margin: 20px 0 10px;
+}
+
+.joingame__items {
+    margin-bottom: 20px;
+}
+
+.joingame__title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.joingame__item {
+    display: flex;
+    justify-content: space-between;
+    background: repeating-linear-gradient(45deg, #343b6b, #343b6b 10px, #2d3770 10px, #2d3770 20px);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.joingame__buy-in--info {
+    display: flex;
+    flex-direction: column;
+}
+
+.joingame__buy-in--box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 10px;
+}
+
+.joingame__buy-in--current {
+    font-size: 20px;
+}
+
+.joingame__text {
+    font-size: 16px;
+    padding: 0 5px;
+}
+
+
+.joingame__back-create {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.joingame__buy-in--slider {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.joingame__buy-in--slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.joingame__buy-in--fill {
+    margin-bottom: 10px;
+}
+
+.joingame__window-back,
+.joingame__window-ok,
+.joingame__back,
+.joingame__go {
+    border: none;
+    border-radius: 5px;
+    max-width: 145px;
+    width: 100vw;
+    height: 35px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+}
+
+.joingame__window-back,
+.joingame__back {
+    background: repeating-linear-gradient(45deg, #555972, #555972 10px, #41465f 10px, #41465f 20px);
+}
+
+.joingame__window-ok,
+.joingame__go {
+    background: repeating-linear-gradient(45deg, #5c69c0, #5c69c0 10px, #43509b 10px, #43509b 20px);
+}
+
 .joingame__window-box {
     display: none;
 }
@@ -11,6 +105,7 @@
     top: 50%;
     transform: translate(-50%, -50%);
     backdrop-filter: blur(5px);
+    z-index: 1;
 }
 
 .joingame__window {
@@ -22,7 +117,7 @@
     border: 1px solid #072a47;
     border-radius: 15px;
     padding: 30px 15px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .joingame__window-title {
@@ -56,72 +151,4 @@
     display: flex;
     gap: 20px;
     margin-top: 20px;
-}
-
-.joingame {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 75vh;
-}
-
-.joingame__form {
-    margin: 20px 0 10px;
-}
-
-.joingame__items {
-    margin-bottom: 20px;
-}
-
-.joingame__title {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.joingame__item {
-    display: flex;
-    justify-content: space-between;
-    background: repeating-linear-gradient(45deg, #343b6b, #343b6b 10px, #2d3770 10px, #2d3770 20px);
-    border-radius: 15px;
-    padding: 10px;
-}
-
-.joingame__item-start {
-    justify-content: start;
-}
-
-.joingame__text {
-    font-size: 16px;
-    padding: 0 5px;
-}
-
-
-.joingame__back-create {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 20px;
-}
-
-.joingame__window-back,
-.joingame__window-ok,
-.joingame__back,
-.joingame__go {
-    border: none;
-    border-radius: 5px;
-    max-width: 145px;
-    width: 100vw;
-    height: 35px;
-    color: #fff;
-    font-weight: 700;
-    text-align: center;
-}
-
-.joingame__window-back,
-.joingame__back {
-    background: repeating-linear-gradient(45deg, #555972, #555972 10px, #41465f 10px, #41465f 20px);
-}
-
-.joingame__window-ok,
-.joingame__go {
-    background: repeating-linear-gradient(45deg, #5c69c0, #5c69c0 10px, #43509b 10px, #43509b 20px);
 }

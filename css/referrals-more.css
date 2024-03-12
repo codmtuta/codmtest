@@ -1,0 +1,90 @@
+.referrals__income {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.referrals__title {
+    padding-right: 5px;
+}
+
+.referrals__history {
+    font-size: 18px;
+}
+
+.referral__history {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px 0;
+    background: #2231463a;
+    margin-bottom: 10px;
+}
+
+.referral__history-user {
+    display: flex;
+    align-items: center;
+}
+
+.referral__history-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.referral__history-username {
+    padding: 0 5px;
+}
+
+.referral__history-money {
+    display: flex;
+    align-items: center;
+}
+
+.referral__history-icon {
+    width: 15px;
+}
+
+.referral__history-cash {
+    padding: 0 5px;
+}
+
+.referral__pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.referral__pagination-page {
+    border: none;
+    border-radius: 5px;
+    width: 35px;
+    height: 25px;
+    background-color: #334670;
+    color: #fff;
+}
+
+.referral__pagination-prev {
+    border: none;
+    background-color: transparent;
+    display: flex;
+}
+
+.referral__pagination-next {
+    border: none;
+    background-color: transparent;
+    display: flex;
+}
+
+.ellipsis {
+    background-color: transparent;
+}
+
+.referral__pagination-active {
+    background-color: #4a72c9;
+}

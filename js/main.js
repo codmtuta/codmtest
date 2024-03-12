@@ -62,6 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+
     // Open/Close BURGER and no scroll
     // const menuBtn = document.querySelector('.navbar__nav');
     // if (menuBtn) {
