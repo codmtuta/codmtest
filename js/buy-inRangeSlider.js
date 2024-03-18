@@ -25,9 +25,8 @@ if (connectSlider) {
         connect: 'lower',
         range: {
             'min': 100,
-            'max': 1037
+            'max': 1000
         },
-        padding: [0, 37]
     });
 
     connectSlider.noUiSlider.on('update', function (values, handle) {

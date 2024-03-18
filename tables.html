@@ -8,9 +8,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lunasima:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/reset.css">
-  <link rel="stylesheet" type="text/css" href="css/styles-main.css">
-  <link rel="shortcut icon" href="images/poker.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.css" />
+</head>
+<link rel="stylesheet" type="text/css" href="css/nouislider.min.css">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/styles-main.css">
+<link rel="shortcut icon" href="images/poker.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -32,12 +35,41 @@
 
         <div class="table">
 
+
+
           <div class="table__items">
 
             <div class="tables__btn-top">
-              <a class="tables__exit" href="poker.html">
+              <div class="tables__exit">
                 <img src="images/icons/exit-left.svg" alt="exit">
-              </a>
+              </div>
+
+              <div class="table__mini-tables">
+                <div class="table__mini-table">
+                  <button class="table__mini-table--btn">
+                    <div class="table__mini-table--cards">
+                      <img class="table__mini-table--card" src="images/card/king-diamonds.png" alt="">
+                      <img class="table__mini-table--card" src="images/card/nine-clubs.png" alt="">
+                    </div>
+                    <img class="table__mini-table--img" src="images/mini-tables/mini-table.png" alt="">
+                  </button>
+                </div>
+                <div class="table__mini-table">
+                  <button class="table__mini-table--btn">
+                    <img class="table__mini-table--img" src="images/mini-tables/mini-table-new.png" alt="">
+                  </button>
+                </div>
+                <div class="table__mini-table">
+                  <button class="table__mini-table--btn">
+                    <img class="table__mini-table--img" src="images/mini-tables/mini-table-new.png" alt="">
+                  </button>
+                </div>
+                <div class="table__mini-table">
+                  <button class="table__mini-table--btn">
+                    <img class="table__mini-table--img" src="images/mini-tables/mini-table-new.png" alt="">
+                  </button>
+                </div>
+              </div>
 
               <div class="table__info-share">
                 <img src="images/icons/share.svg" alt="exit">
@@ -74,17 +106,19 @@
                     </div>
                   </div> -->
 
-                  <!-- <div class="table__tokens-box">
+                  <div class="table__tokens-box">
                     <div class="table__tokens-top">
                       <img class="table__tokens-img" src="images/tokens/token-bank.png" alt="">
                       <span>$ 100</span>
                     </div>
-                  </div> -->
+                  </div>
 
                   <div class="table__table-flop">
-                    <img src="images/tokens/token-jackpot.png" alt="">
                     <div class="table__table-flop--bank">
-                      <span>Банк: $ 800</span>
+                      <img src="images/tokens/token-jackpot.png" alt="">
+                      <div class="table__table-flop--cash">
+                        <span>Банк: $ 800</span>
+                      </div>
                     </div>
                     <div class="table__table-flop--box">
                       <img class="table__table-flop--card" src="images/card/king-clubs.png" alt="">
@@ -271,23 +305,49 @@
               </div>
 
               <div class="table__buttons">
+
+                <div class="table__buttons-range">
+                  <div class="table__buttons-raise">
+                    <button class="table__button-min table__button-indent">
+                      <span>Min</span>
+                    </button>
+                    <button class="table__button-bb table__button-indent">
+                      <span>BB</span>
+                    </button>
+                    <button class="table__button-bank table__button-indent">
+                      <span>Pot</span>
+                    </button><button class="table__button-max table__button-indent">
+                      <span>All-in</span>
+                    </button>
+                  </div>
+
+                  <div class="table__buttons-slider">
+                    <span class="table__button-sum" id="raiseInValue"></span>
+                    <div class="table__button-sliderrange" id="raiseInSlider"></div>
+                  </div>
+
+                </div>
+
                 <button class="table__btn-bg table__fold">
-                  <span>Фолд</span>
+                  <span>Fold</span>
                 </button>
-                <button class="table__btn-bg table__Call">
-                  <span>Колл 100</span>
+                <button class="table__btn-bg table__call">
+                  <span>Call</span>
+                  <span>100</span>
                 </button>
-                <button class="table__btn-bg table__Raise">
-                  <span>Рейз 400</span>
+                <button class="table__btn-bg table__raise">
+                  <span>Raise</span>
+                  <span id="raiseInValue-2"></span>
                 </button>
-                <!-- <button class="table__btn-bg table__Check">
-                  <span>Чек</span>
+                <!-- <button class="table__btn-bg table__check">
+                  <span>Check</span>
                 </button>
-                <button class="table__btn-bg table__Bet">
-                  <span>Бет 200</span>
+                <button class="table__btn-bg table__bet">
+                  <span>Bet</span>
+                  <span>200</span>
                 </button>
-                <button class="table__btn-bg table__Check">
-                  <span>Олл-ин</span>
+                <button class="table__btn-bg table__all-in">
+                  <span>All-in</span>
                 </button> -->
               </div>
 
@@ -399,11 +459,34 @@
           <div class="table__invite"></div>
         </div>
 
+        <div class="table__exit-box">
+          <div class="table__exit-window">
+
+            <div class="table__exit-block">
+              <span>Покинуть текущий стол?</span>
+            </div>
+
+            <div class="table__exit-btn">
+              <button class="table__exit-cancel">
+                <div>Отмена</div>
+              </button>
+              <button class="table__exit-ok">
+                <div>Ок</div>
+              </button>
+            </div>
+
+          </div>
+          <div class="table__exit"></div>
+        </div>
+
       </div>
 
     </main>
 
   </div>
+  <script type="text/javascript" src="js/nouislider.min.js"></script>
+  <script type="text/javascript" src="js/raiseRangeSlider.js"></script>
+
   <script type="text/javascript" src="js/windowtest.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 </body>

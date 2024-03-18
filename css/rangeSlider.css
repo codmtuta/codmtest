@@ -40,6 +40,10 @@
     background: #226eb9;
 }
 
+.noUi-connects {
+    border-radius: 5px;
+}
+
 .noUi-handle::after,
 .noUi-handle::before {
     display: none;
@@ -58,6 +62,6 @@
     top: -8px;
 }
 
-.noUi-horizontal .noUi-handle-upper {
-    right: 0;
+.noUi-base {
+    width: 96%;
 }

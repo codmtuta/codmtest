@@ -54,16 +54,6 @@
     padding-top: 20px;
 }
 
-.joingame__buy-in--slider {
-    -webkit-appearance: none;
-    appearance: none;
-}
-
-.joingame__buy-in--slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-}
-
 .joingame__buy-in--fill {
     margin-bottom: 10px;
 }
