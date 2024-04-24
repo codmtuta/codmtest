@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poker Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lunasima:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/styles-main.css">
+  <link rel="shortcut icon" href="images/poker.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="container">
+        <div class="header__items">
+
+          <div class="header__logo">
+            <a class="header__logo-link" href="index.html">
+              <img src="images/logo__poker.png" alt="logo">
+            </a>
+          </div>
+
+          <div class="header__box">
+            <a class="header__box-money" href="wallet.html">
+              <img class="header__box-img" src="images/icons/color-usdt.svg" alt="usdt">
+              <span class="header__box-balance format__number">10000</span>
+              <img class="header__box-btn" src="images/icons/plus.svg" alt="">
+            </a>
+
+            <div class="header__ava">
+              <a class="header__ava-link" href="account.html">
+                <img src="images/ava.jpg" alt="ava">
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+
+        <div class="knb__games">
+          <div class="knb__game">
+            <span>UserName</span>
+            <div class="knb__bet">
+              <span>Ставка:</span>
+              <span>10</span>$
+            </div>
+          </div>
+
+          <div class="knb__items">
+            <div class="knb__item">
+              <img class="knb__img" src="images/faces/ava-4.jpg" alt="">
+            </div>
+            <button class="knb__btn spiner__btn">
+              <div class="knb__btn-animation">Начать игру</div>
+            </button>
+          </div>
+
+          <div class="knb__choice">
+            <span class="knb__choice-text">Выберите жест:</span>
+            <div class="knb__choice-imgs">
+              <img class="knb__choice-img knb__choice-paper" src="images/knb-hands/knb-paper.png" alt="">
+              <img class="knb__choice-img knb__choice-scissors" src="images/knb-hands/knb-scissors.png" alt="">
+              <img class="knb__choice-img knb__choice-stone" src="images/knb-hands/knb-stone.png" alt="">
+            </div>
+          </div>
+
+          <div class="knb__result">
+            <div class="knb__result-rival">
+              <img class="knb__result-rival--img" src="images/faces/ava-4.jpg" alt="">
+              <div class="knb__result-img--blur">
+                <img class="knb__result-img knb__result-rival--paper" src="images/knb-hands/knb-paper.png" alt="">
+              </div>
+              <div class="knb__result-img--blur">
+                <img class="knb__result-img knb__result-rival--scissors" src="images/knb-hands/knb-scissors.png" alt="">
+              </div>
+              <div class="knb__result-img--blur">
+                <img class="knb__result-img knb__result-rival--stone" src="images/knb-hands/knb-stone.png" alt="">
+              </div>
+            </div>
+            <div class="knb__result-text">
+              <span class="knb__result-win">ПОБЕДА</span>
+              <span class="knb__result-draw">НИЧЬЯ</span>
+              <span class="knb__result-defeat">ПОРАЖЕНИЕ</span>
+            </div>
+            <div class="knb__result-my">
+              <img class="knb__result-my--img" src="images/ava.jpg" alt="">
+              <div class="knb__result-img--blur">
+                <img class="knb__result-img knb__result-my--paper" src="images/knb-hands/knb-paper.png" alt="">
+              </div>
+              <div class="knb__result-img--blur">
+                <img class="knb__result-img knb__result-my--scissors" src="images/knb-hands/knb-scissors.png" alt="">
+              </div>
+              <div class="knb__result-img--blur">
+                <img class="knb__result-img knb__result-my--stone" src="images/knb-hands/knb-stone.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="knb__new-box">
+          <div class="knb__new-window">
+
+            <div class="knb__new-block">
+              <span class="knb__new-text">Выберите жест:</span>
+              <div class="knb__new-imgs">
+                <img class="knb__new-img knb__new-paper" src="images/knb-hands/knb-paper.png" alt="">
+                <img class="knb__new-img knb__new-scissors" src="images/knb-hands/knb-scissors.png" alt="">
+                <img class="knb__new-img knb__new-stone" src="images/knb-hands/knb-stone.png" alt="">
+              </div>
+            </div>
+
+            <div class="knb__new-bet">
+              <span class="knb__new-text">Выберите ставку:</span>
+              <input class="knb__new-bet--input" type="number">
+              <div class="knb__new-bet--btn">
+                <button>1$</button>
+                <button>2$</button>
+                <button>5$</button>
+                <button>10$</button>
+                <button>20$</button>
+              </div>
+            </div>
+
+            <div class="knb__new-btn">
+              <button class="knb__new-cancel">
+                <div>Отмена</div>
+              </button>
+              <button class="knb__new-create">
+                <div>Создать</div>
+              </button>
+            </div>
+
+          </div>
+          <div class="knb__new-blur"></div>
+        </div>
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <nav class="navbar">
+
+          <div class="knb__new-game">
+            <img class="knb__new-game--btn" src="images/icons/button-plus.svg" alt="">
+          </div>
+
+          <div class="navbar__items">
+
+            <ul class="navbar__nav">
+              <li class="navbat__item">
+                <a class="navbar__link" href="index.html">
+                  <img class="navbar__img" src="images/icons/home.svg" alt="home">
+                  <p class="navbar__text">Главная</p>
+                </a>
+              </li>
+
+              <li class="navbat__item">
+                <a class="navbar__link" href="wallet.html">
+                  <img class="navbar__img" src="images/icons/wallet.svg" alt="wallet">
+                  <p class="navbar__text">Кошелек</p>
+                </a>
+              </li>
+
+              <li class="navbat__item">
+                <a class="navbar__link" href="story.html">
+                  <img class="navbar__img" src="images/icons/work-history.svg" alt="story">
+                  <p class="navbar__text">История</p>
+                </a>
+              </li>
+
+              <li class="navbat__item">
+                <a class="navbar__link" href="account.html">
+                  <img class="navbar__img" src="images/icons/account.svg" alt="account">
+                  <p class="navbar__text">Профиль</p>
+                </a>
+              </li>
+
+              <li class="navbat__item">
+                <div class="menu__btn">
+                  <img class="navbar__img" src="images/icons/burger-menu.svg" alt="menu">
+                  <p class="navbar__text">Меню</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+      </div>
+
+    </footer>
+
+  </div>
+  <script type="text/javascript" src="js/knb-game.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

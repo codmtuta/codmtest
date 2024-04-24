@@ -9,7 +9,7 @@
 @import url('tables.css');
 @import url('rangeSlider.css');
 @import url('referrals-more.css');
-@import url('page.css');
+@import url('knb-game.css');
 
 html,
 body {
@@ -31,6 +31,7 @@ button {
 }
 
 .container {
+    box-sizing: border-box;
     max-width: 450px;
     margin: 0 auto;
 }
