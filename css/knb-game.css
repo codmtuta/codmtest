@@ -4,6 +4,7 @@
     padding: 5px;
     margin: 10px 0;
     background: #223146;
+    height: 100px;
 }
 
 .knb__game {
@@ -114,7 +115,7 @@
 
 .knb__choice {
     text-align: center;
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 .knb__choice-text {
@@ -129,7 +130,7 @@
 }
 
 .knb__choice-img {
-    width: 50px;
+    width: 35px;
 }
 
 .knb__result {
@@ -222,6 +223,12 @@
     margin-top: 10px;
 }
 
+.active-imgs {
+    background: #226eb9ab;
+    padding: 2px;
+    border-radius: 10px;
+}
+
 .knb__new-img {
     width: 50px;
 }
@@ -238,14 +245,13 @@
     align-items: center;
 }
 
-
 .knb__new-bet--btn {
     margin-top: 10px;
     display: flex;
     gap: 18px;
 }
 
-.knb__new-bet--btn button {
+.knb__new-bet--button {
     border: none;
     border-radius: 5px;
     width: 45px;
@@ -253,6 +259,10 @@
     background: #354157;
     color: #fff;
     font-weight: 700;
+}
+
+.active-bet {
+    background: #226eb9;
 }
 
 .knb__new-bet--input {
