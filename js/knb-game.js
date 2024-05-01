@@ -15,6 +15,9 @@ const stoneMy = document.querySelector('.knb__result-my--stone');
 const newGameKnb = document.querySelector('.knb__new-box');
 const newGameBtn = document.querySelector('.knb__new-game--btn');
 const newGameClose = document.querySelector('.knb__new-cancel');
+const userResult = document.querySelector(".user_result");
+const cpuResult = document.querySelector(".cpu_result");
+
 
 knbChoice.style.display = "none";
 knbResult.style.display = "none";
@@ -85,7 +88,8 @@ choiceHands.forEach(function (button) {
             myChoice = 'stone';
         }
         rivalChoice = getRivalChoice();
-        showResult();
+        resultTime(userResult);
+        resultTime(cpuResult);
     });
 });
 
@@ -115,3 +119,10 @@ function showResult() {
     }
 }
 
+function resultTime(el) {
+    el.style.display = 'block';
+    let time = setTimeout(() => {
+        el.style.display = 'none';
+        showResult();
+    }, 1500);
+}

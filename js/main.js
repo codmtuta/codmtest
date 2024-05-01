@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         const spinnerImage = new Image();
-        spinnerImage.src = '../images/icons/spinner.svg';
+        spinnerImage.src = './images/icons/spinner.svg';
 
         const buttons = document.querySelectorAll('.spiner__btn');
 
