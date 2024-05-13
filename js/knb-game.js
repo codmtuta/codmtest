@@ -1,6 +1,6 @@
 const knbChoice = document.querySelector('.knb__choice');
 const knbResult = document.querySelector('.knb__result');
-const knbStart = document.querySelector('.knb__items');
+const knbStart = document.querySelector('.knb__body');
 const knbBtn = document.querySelector('.knb__btn');
 const choiceHands = document.querySelectorAll('.knb__choice-img');
 const knbWin = document.querySelector('.knb__result-win');

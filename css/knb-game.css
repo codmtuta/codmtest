@@ -1,4 +1,4 @@
-.knb__games {
+.knb__game {
     border-radius: 10px;
     border: 1px solid #5c5b5b;
     padding: 5px;
@@ -7,7 +7,7 @@
     height: 100px;
 }
 
-.knb__game {
+.knb__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,7 +36,7 @@
     padding: 0 6px;
 }
 
-.knb__items {
+.knb__body {
     display: flex;
     justify-content: space-between;
     align-items: center;
