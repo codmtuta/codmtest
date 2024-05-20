@@ -55,7 +55,7 @@
 }
 
 .knb__btn-animation {
-    width: 100px;
+    width: 135px;
     height: 30px;
     border: none;
     outline: none;
@@ -131,6 +131,7 @@
 
 .knb__choice-img {
     width: 35px;
+    cursor: pointer;
 }
 
 .knb__result {
@@ -261,6 +262,7 @@
 
 .knb__new-img {
     width: 50px;
+    cursor: pointer;
 }
 
 .knb__new-text {
