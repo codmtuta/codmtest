@@ -313,13 +313,13 @@
 
 .dice-one {
     position: absolute;
-    top: 4px;
+    top: 5px;
     left: 63px;
 }
 
 .dice-two {
     position: absolute;
-    top: 4px;
+    top: 5px;
     right: 63px;
 }
 
