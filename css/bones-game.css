@@ -1,0 +1,447 @@
+.bones__game {
+    border-radius: 10px;
+    border: 1px solid #5c5b5b;
+    padding: 5px;
+    margin: 10px 0;
+    background: #223146;
+    height: 100px;
+}
+
+.bones__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 700;
+    background: repeating-linear-gradient(45deg,
+            #bc6060,
+            #bc6060 10px,
+            #984646 10px,
+            #984646 20px);
+}
+
+.bones__bet {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.bones__bet span {
+    padding-right: 5px;
+}
+
+.bones__item {
+    padding: 0 6px;
+}
+
+.bones__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.bones__img {
+    width: 55px;
+    border-radius: 50%;
+}
+
+.bones__btn {
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.bones__btn-animation {
+    width: 135px;
+    height: 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #000000;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+.bones__btn-animation::before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 11px;
+}
+
+.bones__btn-animation::after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.bones__result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+}
+
+.bones__result-rival {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.bones__result-rival--img {
+    width: 55px;
+    border-radius: 50%;
+}
+
+.bones__result-text {
+    font-size: 14px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.bones__result-win {
+    color: #2fe1ab;
+}
+
+.bones__result-draw {
+    color: #a3a3a3;
+}
+
+.bones__result-defeat {
+    color: #cb4343;
+}
+
+.bones__result-my {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.bones__result-my--img {
+    width: 55px;
+    border-radius: 50%;
+}
+
+.bones__user-result img,
+.bones__cpu-result img {
+    padding: 3px;
+    width: 40px;
+}
+
+.bones__new-window {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #04233db2;
+    border: 1px solid #072a47;
+    border-radius: 15px;
+    padding: 30px 15px;
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.bones__new-block {
+    text-align: center;
+}
+
+.bones__new-block img {
+    width: 50px;
+}
+
+.bones__new-text {
+    text-align: center;
+    font-size: 22px;
+    padding-top: 20px;
+}
+
+.bones__new-bet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bones__new-bet--btn {
+    margin-top: 10px;
+    display: flex;
+    gap: 18px;
+}
+
+.bones__new-bet--button {
+    border: none;
+    border-radius: 5px;
+    width: 45px;
+    height: 30px;
+    background: #354157;
+    color: #fff;
+    font-weight: 700;
+}
+
+.active-bet {
+    background: #226eb9;
+}
+
+.bones__new-bet--input {
+    margin-top: 10px;
+    border: 1px solid #5c5b5b;
+    border-radius: 5px;
+    background-color: #1e375079;
+    color: #fff;
+    outline: none;
+    text-indent: 5px;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.bones__new-btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.bones__new-cancel,
+.bones__new-create {
+    border: none;
+    border-radius: 5px;
+    max-width: 140px;
+    width: 100vw;
+    height: 35px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+}
+
+.bones__new-cancel {
+    background: repeating-linear-gradient(45deg, #555972, #555972 10px, #41465f 10px, #41465f 20px);
+}
+
+.bones__new-create {
+    background: repeating-linear-gradient(45deg, #5c69c0, #5c69c0 10px, #43509b 10px, #43509b 20px);
+}
+
+.bones__new-blur {
+    background-color: #02251221;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 1;
+}
+
+/* --------------------------------------- */
+
+.bones__new-game {
+    position: absolute;
+    bottom: 70px;
+    right: 20px;
+}
+
+.bones__new-game--btn {
+    width: 50px;
+}
+
+/* ---------ROTATE------------------------------ */
+.dice {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.dot__bones {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    margin: -5px 5px 5px -5px;
+    border-radius: 20px;
+    background-color: #585757;
+    box-shadow: inset 2px 2px #000000;
+}
+
+.dice-one {
+    position: absolute;
+    top: 4px;
+    left: 63px;
+}
+
+.dice-two {
+    position: absolute;
+    top: 4px;
+    right: 63px;
+}
+
+.side {
+    position: absolute;
+    background-color: #ffF;
+    border-radius: 5px;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+    line-height: 2em;
+    font-size: 7px;
+}
+
+.side:nth-child(1) {
+    transform: translateZ(3.1em);
+}
+
+.side:nth-child(6) {
+    transform: rotateY(90deg) translateZ(3.1em);
+}
+
+.side:nth-child(3) {
+    transform: rotateY(-90deg) translateZ(3.1em);
+}
+
+.side:nth-child(4) {
+    transform: rotateX(90deg) translateZ(3.1em);
+}
+
+.side:nth-child(5) {
+    transform: rotateX(-90deg) translateZ(3.1em);
+}
+
+.side:nth-child(2) {
+    transform: rotateY(-180deg) translateZ(3.1em);
+}
+
+.show-1 {
+    transform: rotateX(720deg) rotateZ(-720deg);
+}
+
+.show-2 {
+    transform: rotateX(-900deg) rotateZ(1080deg);
+}
+
+.show-3 {
+    transform: rotateY(810deg) rotateZ(720deg);
+}
+
+.show-4 {
+    transform: rotateX(-810deg) rotateZ(-1080deg);
+}
+
+.show-5 {
+    transform: rotateX(450deg) rotateZ(-720deg);
+}
+
+.show-6 {
+    transform: rotateY(-450deg) rotateZ(-1440deg);
+}
+
+.two-1,
+.three-1,
+.four-1,
+.five-1,
+.six-1 {
+    top: 20%;
+    left: 20%;
+}
+
+.four-3,
+.five-3,
+.six-4 {
+    top: 20%;
+    left: 80%;
+}
+
+.one-1,
+.three-2,
+.five-5 {
+    top: 50%;
+    left: 50%;
+}
+
+.four-2,
+.five-2,
+.six-3 {
+    top: 80%;
+    left: 20%;
+}
+
+.two-2,
+.three-3,
+.four-4,
+.five-4,
+.six-6 {
+    top: 80%;
+    left: 80%;
+}
+
+.six-2 {
+    top: 50%;
+    left: 20%;
+}
+
+.six-5 {
+    top: 50%;
+    left: 80%;
+}
+
+@keyframes spin {
+    from {
+        transform: rotateX(0) rotateY(0) rotateZ(0);
+    }
+
+    to {
+        transform: rotateX(720deg) rotateY(720deg) rotateZ(720deg);
+    }
+}
+
+.dice.spin {
+    animation: spin 1s ease-in-out;
+}
