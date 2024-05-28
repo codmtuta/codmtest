@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Poker Club</title>
+  <title>Mclub</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lunasima:wght@400;700&display=swap" rel="stylesheet">
@@ -28,7 +28,7 @@
 
           <div class="header__box">
             <a class="header__box-money" href="wallet.html">
-              <img class="header__box-img" src="images/icons/color-usdt.svg" alt="usdt">
+              <img class="header__box-img" src="images/icons/color-usdt.png" alt="usdt">
               <span class="header__box-balance format__number">10000</span>
               <img class="header__box-btn" src="images/icons/plus.svg" alt="">
             </a>
@@ -52,7 +52,7 @@
           <div class="wallet__box">
             <div class="wallet__items">
               <div class="wallet__item">
-                <img class="wallet__img-usdt" src="images/icons/color-usdt.svg" alt="img-usdt">
+                <img class="wallet__img-usdt" src="images/icons/color-usdt.png" alt="img-usdt">
                 <div class="wallet__money-text">
                   <p class="wallet__money">USDT: </p>
                   <p class="wallet__balance">100000</p>
@@ -75,349 +75,149 @@
           </div>
 
           <div class="wallet__transactions">
+
             <div class="wallet__transaction">
-              <div class="wallet__transaction-box">
-                <img class="wallet__transaction-img" src="images/icons/arrow-up-right.svg" alt="">
-                <div class="wallet__transaction-text">
-                  <p class="wallet__transaction-rtwl">Пополнение</p>
-                  <p class="wallet__transaction-date">01.04.2024</p>
+              <div class="wallet__transaction-item">
+                <div class="wallet__transaction-box">
+                  <img class="wallet__transaction-img" src="images/icons/arrow-up-right.svg" alt="">
+                  <div class="wallet__transaction-text">
+                    <p class="wallet__transaction-rtwl">Вывод</p>
+                    <p class="wallet__transaction-date">01.04.2024</p>
+                  </div>
+                </div>
+                <span class="wallet__transaction-money">-<span class="wallet__transaction-money">214</span> USDT</span>
+              </div>
+
+              <div class="wallet__transaction-details">
+                <div class="wallet__transaction-status">
+                  <span>Статус</span>
+                  <div class="wallet__transaction-status-item">
+                    <span class="wallet__transaction-status-yellow">Заявка создана</span>
+                    <button class="wallet__transaction-status-btn">Отменить</button>
+                  </div>
+                  <span class="wallet__transaction-status-light--gray status-none">На проверке</span>
+                  <span class="wallet__transaction-status-white status-none">Отправляется</span>
+                  <span class="wallet__transaction-status-green status-none">Выплачено</span>
+                  <span class="wallet__transaction-status-grey status-none">Отклонено</span>
+                  <span class="wallet__transaction-status-red status-none">Отменено</span>
+                </div>
+                <div class="wallet__transaction-times">
+                  <span>Время</span>
+                  <div class="wallet__transaction-time">
+                    <span class="wallet__transaction-time--date">01.04.2024</span><span>12:43</span>
+                  </div>
                 </div>
               </div>
-              <span class="wallet__transaction-money">-214 USDT</span>
             </div>
 
             <div class="wallet__transaction">
-              <div class="wallet__transaction-box">
-                <img class="wallet__transaction-img" src="images/icons/arrow-down.svg" alt="">
-                <div class="wallet__transaction-text">
-                  <p class="wallet__transaction-rtwl">Пополнение</p>
-                  <p class="wallet__transaction-date">01.04.2024</p>
+              <div class="wallet__transaction-item">
+                <div class="wallet__transaction-box">
+                  <img class="wallet__transaction-img" src="images/icons/arrow-down.svg" alt="">
+                  <div class="wallet__transaction-text">
+                    <p class="wallet__transaction-rtwl">Пополнение</p>
+                    <p class="wallet__transaction-date">01.04.2024</p>
+                  </div>
+                </div>
+                <span class="wallet__transaction-money">+<span class="wallet__transaction-money">214</span> USDT</span>
+              </div>
+              <div class="wallet__transaction-details">
+                <div class="wallet__transaction-status">
+                  <span>Статус</span>
+                  <span class="wallet__transaction-status-grey status-none">Ожидание оплаты</span>
+                  <span class="wallet__transaction-status-green">Оплачено</span>
+                  <span class="wallet__transaction-status-red status-none">Отменено</span>
+                </div>
+                <div class="wallet__transaction-times">
+                  <span>Время</span>
+                  <div class="wallet__transaction-time">
+                    <span class="wallet__transaction-time--date">01.04.2024</span><span>12:43</span>
+                  </div>
                 </div>
               </div>
-              <span class="wallet__transaction-money">+214 USDT</span>
-            </div>
-
-            <div class="wallet__transaction">
-              <div class="wallet__transaction-box">
-                <img class="wallet__transaction-img" src="images/icons/arrow-down.svg" alt="">
-                <div class="wallet__transaction-text">
-                  <p class="wallet__transaction-rtwl">Пополнение</p>
-                  <p class="wallet__transaction-date">01.04.2024</p>
-                </div>
-              </div>
-              <span class="wallet__transaction-money">+214 USDT</span>
-            </div>
-
-            <div class="wallet__transaction">
-              <div class="wallet__transaction-box">
-                <img class="wallet__transaction-img" src="images/icons/arrow-down.svg" alt="">
-                <div class="wallet__transaction-text">
-                  <p class="wallet__transaction-rtwl">Пополнение</p>
-                  <p class="wallet__transaction-date">01.04.2024</p>
-                </div>
-              </div>
-              <span class="wallet__transaction-money">+214 USDT</span>
-            </div>
-
-            <div class="wallet__transaction">
-              <div class="wallet__transaction-box">
-                <img class="wallet__transaction-img" src="images/icons/arrow-down.svg" alt="">
-                <div class="wallet__transaction-text">
-                  <p class="wallet__transaction-rtwl">Пополнение</p>
-                  <p class="wallet__transaction-date">01.04.2024</p>
-                </div>
-              </div>
-              <span class="wallet__transaction-money">+214 USDT</span>
-            </div>
-
-            <div class="wallet__transaction">
-              <div class="wallet__transaction-box">
-                <img class="wallet__transaction-img" src="images/icons/arrow-down.svg" alt="">
-                <div class="wallet__transaction-text">
-                  <p class="wallet__transaction-rtwl">Пополнение</p>
-                  <p class="wallet__transaction-date">01.04.2024</p>
-                </div>
-              </div>
-              <span class="wallet__transaction-money">+214 USDT</span>
-            </div>
-
-            <div class="wallet__transaction">
-              <div class="wallet__transaction-box">
-                <img class="wallet__transaction-img" src="images/icons/arrow-down.svg" alt="">
-                <div class="wallet__transaction-text">
-                  <p class="wallet__transaction-rtwl">Пополнение</p>
-                  <p class="wallet__transaction-date">01.04.2024</p>
-                </div>
-              </div>
-              <span class="wallet__transaction-money">+214 USDT</span>
-            </div>
-
-            <div class="wallet__transaction">
-              <div class="wallet__transaction-box">
-                <img class="wallet__transaction-img" src="images/icons/arrow-down.svg" alt="">
-                <div class="wallet__transaction-text">
-                  <p class="wallet__transaction-rtwl">Пополнение</p>
-                  <p class="wallet__transaction-date">01.04.2024</p>
-                </div>
-              </div>
-              <span class="wallet__transaction-money">+214 USDT</span>
-            </div>
-
-            <div class="wallet__transaction">
-              <div class="wallet__transaction-box">
-                <img class="wallet__transaction-img" src="images/icons/arrow-down.svg" alt="">
-                <div class="wallet__transaction-text">
-                  <p class="wallet__transaction-rtwl">Пополнение</p>
-                  <p class="wallet__transaction-date">01.04.2024</p>
-                </div>
-              </div>
-              <span class="wallet__transaction-money">+214 USDT</span>
-            </div>
-
-            <div class="wallet__transaction">
-              <div class="wallet__transaction-box">
-                <img class="wallet__transaction-img" src="images/icons/arrow-down.svg" alt="">
-                <div class="wallet__transaction-text">
-                  <p class="wallet__transaction-rtwl">Пополнение</p>
-                  <p class="wallet__transaction-date">01.04.2024</p>
-                </div>
-              </div>
-              <span class="wallet__transaction-money">+214 USDT</span>
-            </div>
-
-            <div class="wallet__transaction">
-              <div class="wallet__transaction-box">
-                <img class="wallet__transaction-img" src="images/icons/arrow-down.svg" alt="">
-                <div class="wallet__transaction-text">
-                  <p class="wallet__transaction-rtwl">Пополнение</p>
-                  <p class="wallet__transaction-date">01.04.2024</p>
-                </div>
-              </div>
-              <span class="wallet__transaction-money">+214 USDT</span>
-            </div>
-
-            <div class="wallet__transaction">
-              <div class="wallet__transaction-box">
-                <img class="wallet__transaction-img" src="images/icons/arrow-down.svg" alt="">
-                <div class="wallet__transaction-text">
-                  <p class="wallet__transaction-rtwl">Пополнение</p>
-                  <p class="wallet__transaction-date">01.04.2024</p>
-                </div>
-              </div>
-              <span class="wallet__transaction-money">+214 USDT</span>
-            </div>
-
-            <div class="wallet__transaction">
-              <div class="wallet__transaction-box">
-                <img class="wallet__transaction-img" src="images/icons/arrow-down.svg" alt="">
-                <div class="wallet__transaction-text">
-                  <p class="wallet__transaction-rtwl">Пополнение</p>
-                  <p class="wallet__transaction-date">01.04.2024</p>
-                </div>
-              </div>
-              <span class="wallet__transaction-money">+214 USDT</span>
-            </div>
-
-            <div class="wallet__transaction">
-              <div class="wallet__transaction-box">
-                <img class="wallet__transaction-img" src="images/icons/arrow-down.svg" alt="">
-                <div class="wallet__transaction-text">
-                  <p class="wallet__transaction-rtwl">Пополнение</p>
-                  <p class="wallet__transaction-date">01.04.2024</p>
-                </div>
-              </div>
-              <span class="wallet__transaction-money">+214 USDT</span>
-            </div>
-
-            <div class="wallet__transaction">
-              <div class="wallet__transaction-box">
-                <img class="wallet__transaction-img" src="images/icons/arrow-down.svg" alt="">
-                <div class="wallet__transaction-text">
-                  <p class="wallet__transaction-rtwl">Пополнение</p>
-                  <p class="wallet__transaction-date">01.04.2024</p>
-                </div>
-              </div>
-              <span class="wallet__transaction-money">+214 USDT</span>
-            </div>
-
-            <div class="wallet__transaction">
-              <div class="wallet__transaction-box">
-                <img class="wallet__transaction-img" src="images/icons/arrow-down.svg" alt="">
-                <div class="wallet__transaction-text">
-                  <p class="wallet__transaction-rtwl">Пополнение</p>
-                  <p class="wallet__transaction-date">01.04.2024</p>
-                </div>
-              </div>
-              <span class="wallet__transaction-money">+214 USDT</span>
-            </div>
-
-            <div class="wallet__transaction">
-              <div class="wallet__transaction-box">
-                <img class="wallet__transaction-img" src="images/icons/arrow-down.svg" alt="">
-                <div class="wallet__transaction-text">
-                  <p class="wallet__transaction-rtwl">Пополнение</p>
-                  <p class="wallet__transaction-date">01.04.2024</p>
-                </div>
-              </div>
-              <span class="wallet__transaction-money">+214 USDT</span>
-            </div>
-
-            <div class="wallet__transaction">
-              <div class="wallet__transaction-box">
-                <img class="wallet__transaction-img" src="images/icons/arrow-down.svg" alt="">
-                <div class="wallet__transaction-text">
-                  <p class="wallet__transaction-rtwl">Пополнение</p>
-                  <p class="wallet__transaction-date">01.04.2024</p>
-                </div>
-              </div>
-              <span class="wallet__transaction-money">+214 USDT</span>
-            </div>
-
-            <div class="wallet__transaction">
-              <div class="wallet__transaction-box">
-                <img class="wallet__transaction-img" src="images/icons/arrow-down.svg" alt="">
-                <div class="wallet__transaction-text">
-                  <p class="wallet__transaction-rtwl">Пополнение</p>
-                  <p class="wallet__transaction-date">01.04.2024</p>
-                </div>
-              </div>
-              <span class="wallet__transaction-money">+214 USDT</span>
-            </div>
-
-            <div class="wallet__transaction">
-              <div class="wallet__transaction-box">
-                <img class="wallet__transaction-img" src="images/icons/arrow-down.svg" alt="">
-                <div class="wallet__transaction-text">
-                  <p class="wallet__transaction-rtwl">Пополнение</p>
-                  <p class="wallet__transaction-date">01.04.2024</p>
-                </div>
-              </div>
-              <span class="wallet__transaction-money">+214 USDT</span>
-            </div>
-
-            <div class="wallet__transaction">
-              <div class="wallet__transaction-box">
-                <img class="wallet__transaction-img" src="images/icons/arrow-down.svg" alt="">
-                <div class="wallet__transaction-text">
-                  <p class="wallet__transaction-rtwl">Пополнение</p>
-                  <p class="wallet__transaction-date">01.04.2024</p>
-                </div>
-              </div>
-              <span class="wallet__transaction-money">+214 USDT</span>
-            </div>
-
-            <div class="wallet__transaction">
-              <div class="wallet__transaction-box">
-                <img class="wallet__transaction-img" src="images/icons/arrow-down.svg" alt="">
-                <div class="wallet__transaction-text">
-                  <p class="wallet__transaction-rtwl">Пополнение</p>
-                  <p class="wallet__transaction-date">01.04.2024</p>
-                </div>
-              </div>
-              <span class="wallet__transaction-money">+214 USDT</span>
-            </div>
-
-            <div class="wallet__transaction">
-              <div class="wallet__transaction-box">
-                <img class="wallet__transaction-img" src="images/icons/arrow-down.svg" alt="">
-                <div class="wallet__transaction-text">
-                  <p class="wallet__transaction-rtwl">Пополнение</p>
-                  <p class="wallet__transaction-date">01.04.2024</p>
-                </div>
-              </div>
-              <span class="wallet__transaction-money">+214 USDT</span>
-            </div>
-
-            <div class="wallet__transaction">
-              <div class="wallet__transaction-box">
-                <img class="wallet__transaction-img" src="images/icons/arrow-down.svg" alt="">
-                <div class="wallet__transaction-text">
-                  <p class="wallet__transaction-rtwl">Пополнение</p>
-                  <p class="wallet__transaction-date">01.04.2024</p>
-                </div>
-              </div>
-              <span class="wallet__transaction-money">+214 USDT</span>
-            </div>
-
-            <div class="wallet__transaction">
-              <div class="wallet__transaction-box">
-                <img class="wallet__transaction-img" src="images/icons/arrow-down.svg" alt="">
-                <div class="wallet__transaction-text">
-                  <p class="wallet__transaction-rtwl">Пополнение</p>
-                  <p class="wallet__transaction-date">01.04.2024</p>
-                </div>
-              </div>
-              <span class="wallet__transaction-money">+214 USDT</span>
-            </div>
-
-            <div class="wallet__transaction">
-              <div class="wallet__transaction-box">
-                <img class="wallet__transaction-img" src="images/icons/arrow-down.svg" alt="">
-                <div class="wallet__transaction-text">
-                  <p class="wallet__transaction-rtwl">Пополнение</p>
-                  <p class="wallet__transaction-date">01.04.2024</p>
-                </div>
-              </div>
-              <span class="wallet__transaction-money">+214 USDT</span>
-            </div>
-
-            <div class="wallet__transaction">
-              <div class="wallet__transaction-box">
-                <img class="wallet__transaction-img" src="images/icons/arrow-down.svg" alt="">
-                <div class="wallet__transaction-text">
-                  <p class="wallet__transaction-rtwl">Пополнение</p>
-                  <p class="wallet__transaction-date">01.04.2024</p>
-                </div>
-              </div>
-              <span class="wallet__transaction-money">+214 USDT</span>
-            </div>
-
-            <div class="wallet__transaction">
-              <div class="wallet__transaction-box">
-                <img class="wallet__transaction-img" src="images/icons/arrow-down.svg" alt="">
-                <div class="wallet__transaction-text">
-                  <p class="wallet__transaction-rtwl">Пополнение</p>
-                  <p class="wallet__transaction-date">01.04.2024</p>
-                </div>
-              </div>
-              <span class="wallet__transaction-money">+214 USDT</span>
-            </div>
-
-            <div class="wallet__transaction">
-              <div class="wallet__transaction-box">
-                <img class="wallet__transaction-img" src="images/icons/arrow-down.svg" alt="">
-                <div class="wallet__transaction-text">
-                  <p class="wallet__transaction-rtwl">Пополнение</p>
-                  <p class="wallet__transaction-date">01.04.2024</p>
-                </div>
-              </div>
-              <span class="wallet__transaction-money">+214 USDT</span>
-            </div>
-
-            <div class="wallet__transaction">
-              <div class="wallet__transaction-box">
-                <img class="wallet__transaction-img" src="images/icons/arrow-down.svg" alt="">
-                <div class="wallet__transaction-text">
-                  <p class="wallet__transaction-rtwl">Пополнение</p>
-                  <p class="wallet__transaction-date">01.04.2024</p>
-                </div>
-              </div>
-              <span class="wallet__transaction-money">+214 USDT</span>
-            </div>
-
-            <div class="wallet__transaction">
-              <div class="wallet__transaction-box">
-                <img class="wallet__transaction-img" src="images/icons/arrow-down.svg" alt="">
-                <div class="wallet__transaction-text">
-                  <p class="wallet__transaction-rtwl">Пополнение</p>
-                  <p class="wallet__transaction-date">01.04.2024</p>
-                </div>
-              </div>
-              <span class="wallet__transaction-money">+0000 USDT</span>
             </div>
 
           </div>
+        </div>
 
+        <div class="wallet__conclusion">
+          <div class="wallet__new-window">
+
+            <div class="wallet__new-block">
+              <img src="images/icons/cryptobot.jpg" alt="">
+              <h2 class="wallet__new-title">Вывод на @CryptoBot</h2>
+            </div>
+
+            <div class="wallet__new-bet">
+
+              <div class="wallet__new-box">
+                <input class="wallet__new-bet--input" type="number" placeholder="Введите сумму">
+                <button class="wallet__new-bet--btn">Макс</button>
+              </div>
+            </div>
+
+            <div class="wallet__new-info">
+              <div class="wallet__new-minmax">
+                <span class="wallet__new-text">Минимальная сумма: 1 USDT (TRC20)</span>
+              </div>
+              <div class="wallet__new-commission">
+                <span class="wallet__new-text">Комиссия</span>
+                <div class="wallet__new-sum">
+                  <span class="wallet__new-sum--text">1,51</span>$
+                </div>
+              </div>
+
+              <div class="wallet__new-total">
+                <span class="wallet__new-text">Итого</span>
+                <div class="wallet__new-sum">
+                  <span class="wallet__new-sum--text">2,51</span>$
+                </div>
+              </div>
+            </div>
+
+            <div class="wallet__new-btn">
+              <button class="wallet__new-cancel">
+                <div>Отмена</div>
+              </button>
+              <button class="wallet__new-create">
+                <div>Вывод</div>
+              </button>
+            </div>
+
+          </div>
+          <div class="wallet__new-blur"></div>
+        </div>
+
+        <div class="wallet__refill">
+          <div class="wallet__new-window">
+
+            <div class="wallet__new-block">
+              <img src="images/icons/cryptobot.jpg" alt="">
+              <h2 class="wallet__new-title">Пополнение через @CryptoBot</h2>
+            </div>
+
+            <div class="wallet__new-buy">
+              <div class="wallet__new-box">
+                <input class="wallet__new-bet--input" type="number" placeholder="Введите сумму">
+              </div>
+            </div>
+            <div class="wallet__new-info">
+              <div class="wallet__new-minmax">
+                <span class="wallet__new-text">Минимальная сумма: 1 USDT (TRC20)</span>
+              </div>
+            </div>
+
+            <div class="wallet__new-btn">
+              <button class="wallet__new-cancel">
+                <div>Отмена</div>
+              </button>
+              <button class="wallet__new-create">
+                <div>Оплатить</div>
+              </button>
+            </div>
+
+          </div>
+          <div class="wallet__new-blur"></div>
         </div>
 
       </div>
@@ -466,7 +266,7 @@
     </footer>
 
   </div>
-
+  <script type="text/javascript" src="js/wallet.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 </body>
 
