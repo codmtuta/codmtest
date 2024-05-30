@@ -7,7 +7,7 @@ transactions.forEach(el => {
                 event.classList.remove('activeDetails');
             }
         });
-        el.classList.toggle('activeDetails');
+        el.classList.add('activeDetails');
     });
 });
 
