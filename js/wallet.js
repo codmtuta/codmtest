@@ -2,12 +2,18 @@ const transactions = document.querySelectorAll('.wallet__transaction');
 
 transactions.forEach(el => {
     el.addEventListener('click', () => {
+
+        if (event.target.classList.contains('wallet__transaction-status-btn')) {
+            event.stopPropagation();
+            return;
+        }
+
         transactions.forEach(event => {
             if (event != el) {
                 event.classList.remove('activeDetails');
             }
         });
-        el.classList.add('activeDetails');
+        el.classList.toggle('activeDetails');
     });
 });
 
