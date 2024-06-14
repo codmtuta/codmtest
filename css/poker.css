@@ -168,9 +168,10 @@
 }
 
 .tables__new-game {
-    position: absolute;
-    bottom: 70px;
-    right: 20px;
+    position: fixed;
+    bottom: 75px;
+    left: calc(50% + 145px);
+    transform: translate(-50%, -6%);
 }
 
 .tables__new-game--btn {

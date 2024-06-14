@@ -71,3 +71,27 @@ function rollDice() {
         bonesDraw.style.display = 'block';
     };
 };
+
+const windowHeight = document.querySelectorAll('.window-height');
+const inputFields = document.querySelectorAll('.input-field');
+let initialWindowHeight = window.innerHeight;
+
+inputFields.forEach(inputField => {
+    inputField.addEventListener('focus', () => {
+        windowHeight.forEach(item => {
+            if (window.innerHeight < 800) {
+                item.style.top = '40%';
+            }
+        });
+    });
+
+    inputField.addEventListener('blur', () => {
+        setTimeout(() => {
+            if (window.innerHeight === initialWindowHeight) {
+                windowHeight.forEach(item => {
+                    item.style.top = '50%';
+                });
+            }
+        }, 100);
+    });
+});

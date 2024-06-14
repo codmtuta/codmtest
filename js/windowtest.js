@@ -4,7 +4,7 @@ const closeBtn = document.querySelector('.table__info-close'),
     exitBtn = document.querySelector('.tables__exit'),
     windowExit = document.querySelector('.table__exit-box'),
     cancelWindow = document.querySelector('.table__exit-cancel'),
-    tableExitOk = document.querySelector('.table__exit-ok')
+    tableExitOk = document.querySelector('.table__exit-ok');
 
 if (closeBtnWindow) {
     closeBtn.addEventListener('click', () => {
@@ -26,5 +26,3 @@ cancelWindow.addEventListener('click', () => {
 tableExitOk.addEventListener('click', function () {
     window.location.href = 'poker.html';
 });
-
-

@@ -186,6 +186,7 @@
     flex-direction: column;
     justify-content: space-between;
     z-index: 2;
+    transition: top 0.3s ease;
 }
 
 .bones__new-block {
@@ -283,9 +284,10 @@
 /* --------------------------------------- */
 
 .bones__new-game {
-    position: absolute;
-    bottom: 70px;
-    right: 20px;
+    position: fixed;
+    bottom: 75px;
+    left: calc(50% + 145px);
+    transform: translate(-50%, -6%);
 }
 
 .bones__new-game--btn {
