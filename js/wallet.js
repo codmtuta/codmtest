@@ -21,7 +21,7 @@ const openConclusion = document.querySelector('.wallet__conclusion'),
     openRefill = document.querySelector('.wallet__refill'),
     btnConclusion = document.querySelector('.wallet__btn-conclusion'),
     btnRefill = document.querySelector('.wallet__btn-refill'),
-    closeWindow = document.querySelectorAll('.wallet__new-cancel');
+    closeWindow = document.querySelectorAll('.modal-cancel');
 
 function openWindowWallet(el, btn, closeBtn) {
     el.style.display = 'none';
