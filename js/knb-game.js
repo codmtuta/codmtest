@@ -12,9 +12,9 @@ const stoneRival = document.querySelector('.knb__result-rival--stone');
 const paperMy = document.querySelector('.knb__result-my--paper');
 const scissorsMy = document.querySelector('.knb__result-my--scissors');
 const stoneMy = document.querySelector('.knb__result-my--stone');
-const newGameKnb = document.querySelector('.knb__new-box');
-const newGameBtn = document.querySelector('.knb__new-game--btn');
-const newGameClose = document.querySelector('.knb__new-cancel');
+const newGameKnb = document.querySelector('.modal');
+const newGameBtn = document.querySelector('.plus__new-game--btn');
+const newGameClose = document.querySelector('.modal-cancel');
 const userResult = document.querySelector(".user_result");
 const cpuResult = document.querySelector(".cpu_result");
 
@@ -33,7 +33,7 @@ stoneMy.style.display = "none";
 newGameKnb.style.display = "none"
 
 newGameBtn.addEventListener('click', function () {
-    newGameKnb.style.display = "";
+    newGameKnb.style.display = "block";
 });
 
 newGameClose.addEventListener('click', function () {

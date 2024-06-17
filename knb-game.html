@@ -8,8 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lunasima:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/reset.css">
-  <link rel="stylesheet" type="text/css" href="css/styles-main.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="shortcut icon" href="images/poker.ico" type="image/x-icon">
 </head>
 
@@ -110,11 +109,11 @@
 
         </div>
 
-        <div class="knb__new-box">
-          <div class="knb__new-window window-height">
+        <div class="modal">
+          <div class="modal-window window-height">
 
-            <div class="knb__new-block">
-              <span class="knb__new-text">Выберите жест:</span>
+            <div class="modal-dialog">
+              <span class="modal-text">Выберите жест:</span>
               <div class="knb__new-imgs">
                 <img class="knb__new-img knb__new-paper active-imgs" src="images/knb-hands/paper.png" alt="">
                 <img class="knb__new-img knb__new-scissors" src="images/knb-hands/scissors.png" alt="">
@@ -122,34 +121,34 @@
               </div>
             </div>
 
-            <div class="knb__new-bet">
-              <span class="knb__new-text">Выберите ставку:</span>
-              <input class="knb__new-bet--input input-field" type="number">
-              <div class="knb__new-bet--btn">
-                <button class="knb__new-bet--button active-bet">1$</button>
-                <button class="knb__new-bet--button">2$</button>
-                <button class="knb__new-bet--button">5$</button>
-                <button class="knb__new-bet--button">10$</button>
-                <button class="knb__new-bet--button">20$</button>
+            <div class="modal-body">
+              <span class="modal-text">Выберите ставку:</span>
+              <input class="modal-input input-field" type="number">
+              <div class="modal-btn">
+                <button class="modal-button active-bet">1$</button>
+                <button class="modal-button">2$</button>
+                <button class="modal-button">5$</button>
+                <button class="modal-button">10$</button>
+                <button class="modal-button">20$</button>
               </div>
             </div>
 
-            <div class="knb__new-btn">
-              <button class="knb__new-cancel">
+            <div class="modal-footer">
+              <button class="modal-cancel">
                 <div>Отмена</div>
               </button>
-              <button class="knb__new-create">
+              <button class="modal-create">
                 <div>Создать</div>
               </button>
             </div>
 
           </div>
-          <div class="knb__new-blur"></div>
+          <div class="modal-blur"></div>
         </div>
       </div>
 
-      <div class="knb__new-game pointcursor">
-        <img class="knb__new-game--btn" src="images/icons/button-plus.svg" alt="">
+      <div class="plus__new-game pointcursor">
+        <img class="plus__new-game--btn" src="images/icons/button-plus.svg" alt="">
       </div>
     </main>
 
@@ -160,28 +159,28 @@
           <div class="navbar__items">
 
             <ul class="navbar__nav">
-              <li class="navbat__item">
+              <li class="navbar__item">
                 <a class="navbar__link" href="index.html">
                   <img class="navbar__img" src="images/icons/home.svg" alt="home">
                   <p class="navbar__text">Главная</p>
                 </a>
               </li>
 
-              <li class="navbat__item">
+              <li class="navbar__item">
                 <a class="navbar__link" href="wallet.html">
                   <img class="navbar__img" src="images/icons/wallet.svg" alt="wallet">
                   <p class="navbar__text">Кошелек</p>
                 </a>
               </li>
 
-              <li class="navbat__item">
+              <li class="navbar__item">
                 <a class="navbar__link" href="story.html">
                   <img class="navbar__img" src="images/icons/work-history.svg" alt="story">
                   <p class="navbar__text">История</p>
                 </a>
               </li>
 
-              <li class="navbat__item">
+              <li class="navbar__item">
                 <a class="navbar__link" href="account.html">
                   <img class="navbar__img" src="images/icons/account.svg" alt="account">
                   <p class="navbar__text">Профиль</p>

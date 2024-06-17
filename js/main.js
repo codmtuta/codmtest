@@ -52,13 +52,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
         buttons.forEach((button) => {
             button.addEventListener('click', function () {
+
                 buttons.forEach((btn) => {
                     btn.disabled = true;
                 });
                 button.classList.add('loading');
                 const innerDiv = button.querySelector('div');
                 if (innerDiv) {
-                    innerDiv.classList.add('spinner__container');
+                    innerDiv.classList.add('spiner__container');
                 }
                 // window.location.href = 'tables.html'
             });

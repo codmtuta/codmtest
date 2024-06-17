@@ -1,0 +1,26 @@
+.spiner__btn {
+    position: relative;
+}
+
+.spiner__btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    background-image: url(../images/icons/spinner.svg);
+
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.spiner__btn.loading::before {
+    display: block;
+}
+
+.spiner__container {
+    color: transparent;
+}

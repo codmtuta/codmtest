@@ -1,0 +1,78 @@
+.joingame {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 75vh;
+
+    &__form {
+        margin: 20px 0 10px;
+    }
+
+    &__items {
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        background: repeating-linear-gradient(45deg, #343b6b, #343b6b 10px, #2d3770 10px, #2d3770 20px);
+        border-radius: 15px;
+        padding: 10px;
+    }
+
+    &__buy-in--info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__buy-in--box {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-bottom: 10px;
+    }
+
+    &__buy-in--current {
+        font-size: 20px;
+    }
+
+    &__text {
+        font-size: 16px;
+        padding: 0 5px;
+    }
+
+    &__back-create {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 20px;
+    }
+
+    &__buy-in--fill {
+        margin-bottom: 10px;
+    }
+
+    &__back,
+    &__go {
+        border: none;
+        border-radius: 5px;
+        max-width: 145px;
+        width: 100vw;
+        height: 35px;
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &__back {
+        background: repeating-linear-gradient(45deg, #555972, #555972 10px, #41465f 10px, #41465f 20px);
+    }
+
+    &__go {
+        background: repeating-linear-gradient(45deg, #5c69c0, #5c69c0 10px, #43509b 10px, #43509b 20px);
+    }
+}

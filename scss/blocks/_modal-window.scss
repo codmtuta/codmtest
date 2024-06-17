@@ -1,0 +1,125 @@
+.modal {
+    display: none;
+
+    &-window {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #04233db2;
+        border: 1px solid #072a47;
+        border-radius: 15px;
+        padding: 30px 15px;
+        max-width: 300px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 2;
+        transition: top 0.3s ease;
+    }
+
+
+    &-dialog {
+        text-align: center;
+    }
+
+    &-title {
+        font-size: 20px;
+    }
+
+    &-text {
+        text-align: center;
+        font-size: 22px;
+        padding-top: 20px;
+    }
+
+    &-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-input {
+        margin-top: 10px;
+        border: 1px solid #5c5b5b;
+        border-radius: 5px;
+        background-color: #1e375079;
+        color: #fff;
+        outline: none;
+        text-indent: 5px;
+        width: 100%;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    &-btn {
+        margin-top: 10px;
+        display: flex;
+        gap: 18px;
+    }
+
+    &-button {
+        border: none;
+        border-radius: 5px;
+        width: 45px;
+        height: 30px;
+        background: #354157;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    &-footer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 35px;
+    }
+
+    &-cancel,
+    &-create {
+        border: none;
+        border-radius: 5px;
+        max-width: 140px;
+        width: 100vw;
+        height: 35px;
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &-cancel {
+        background: repeating-linear-gradient(45deg, #555972, #555972 10px, #41465f 10px, #41465f 20px);
+    }
+
+    &-create {
+        background: repeating-linear-gradient(45deg, #5c69c0, #5c69c0 10px, #43509b 10px, #43509b 20px);
+    }
+
+    &-input:focus {
+        font-family: "Lunasima", sans-serif;
+        outline: 2px solid #315980;
+        background-color: #1e375079;
+        color: #fff;
+    }
+
+    &-input:valid {
+        font-family: "Lunasima", sans-serif;
+    }
+
+    &-blur {
+        background-color: #020b168a;
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        z-index: 1;
+    }
+}
+
+.active-bet {
+    background: #226eb9;
+}

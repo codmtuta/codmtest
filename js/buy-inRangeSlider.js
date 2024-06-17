@@ -1,9 +1,9 @@
 const connectSlider = document.getElementById('buyInSlider');
 const buyInValue = document.getElementById('buyInValue');
 const go = document.querySelector('.joingame__go');
-const openWindow = document.querySelector('.joingame__window-box');
-const closeWindow = document.querySelector('.joingame__window-back');
-const joingame = document.querySelector('.joingame__window-ok');
+const openWindow = document.querySelector('.modal');
+const closeWindow = document.querySelector('.modal-cancel');
+const joingame = document.querySelector('.modal-create');
 
 if (openWindow) {
     go.addEventListener('click', () => {

@@ -1,0 +1,312 @@
+/* Main_Wallet wallet.thml*/
+.status-none {
+    display: none;
+}
+
+.wallet {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    &__box {
+        max-width: 400px;
+        background-color: transparent;
+        margin: 0 auto;
+        flex: 1;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    &__item {
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    &__img-usdt {
+        width: 50px;
+        padding-bottom: 20px;
+    }
+
+    &__money-text {
+        display: flex;
+    }
+
+    &__money {
+        font-size: 24px;
+    }
+
+    &__balance {
+        margin-left: 15px;
+        font-size: 24px;
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        gap: 20px;
+    }
+
+    &__btn-text {
+        width: 160px;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #fff;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__btn-conclusion {
+        background: repeating-linear-gradient(45deg,
+                #bc6060,
+                #bc6060 10px,
+                #984646 10px,
+                #984646 20px);
+    }
+
+    &__btn-refill {
+        background: repeating-linear-gradient(45deg,
+                #60bc86,
+                #60bc86 10px,
+                #469879 10px,
+                #469879 20px);
+    }
+
+    &__transactions {
+        max-height: 480px;
+        overflow-y: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    &__transactions::-webkit-scrollbar {
+        display: none;
+    }
+
+    &__transaction {
+        display: block;
+        margin: 0 10px 15px;
+        cursor: pointer;
+        background-color: transparent;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    &__transaction-details {
+        display: none;
+        padding: 10px 5px 10px 31px;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.438);
+    }
+
+    &__transaction-status {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__transaction-status-btn {
+        background-color: #747373;
+        border: 1px solid #8d8d8d;
+        border-radius: 5px;
+        color: #ffffff;
+        padding: 2px 10px;
+        margin-left: 10px;
+        font-size: 12px;
+    }
+
+    &__transaction-status-grey {
+        color: #868686;
+    }
+
+    &__transaction-status-green {
+        color: #44a36f;
+    }
+
+    &__transaction-status-red {
+        color: #b90101;
+    }
+
+    &__transaction-status-yellow {
+        color: #f5ff67;
+    }
+
+    &__transaction-status-light--gray {
+        color: #b6b6b6;
+    }
+
+    &__transaction-times {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+
+    &__transaction-time--date {
+        padding-right: 10px;
+    }
+
+    &__transaction.activeDetails .wallet__transaction-details {
+        display: block;
+    }
+
+    &__transaction-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__transaction-box {
+        display: flex;
+    }
+
+    &__transaction-img {
+        width: 20px;
+        margin-right: 10px;
+    }
+
+    &__transaction-text {
+        display: block;
+    }
+
+    &__transaction-rtwl {
+        font-size: 14px;
+        font-weight: 700;
+        padding-bottom: 5px;
+    }
+
+    &__transaction-date {
+        color: #868686;
+    }
+
+    &__transaction-money {
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    &__new-window {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #04233db2;
+        border: 1px solid #072a47;
+        border-radius: 15px;
+        padding: 30px 15px;
+        max-width: 300px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 2;
+        transition: top 0.3s ease;
+    }
+
+    &__new-block {
+        text-align: center;
+    }
+
+    &__new-block img {
+        width: 50px;
+        border-radius: 50%;
+    }
+
+    &__new-title {
+        line-height: 27px;
+        font-size: 18px;
+        padding-top: 20px;
+    }
+
+    &__new-box {
+        margin-top: 15px;
+        position: relative;
+    }
+
+    &__new-text {
+        font-size: 14px;
+        color: #9f9e9e;
+    }
+
+    &__new-bet--input {
+        margin-top: 7px;
+        border: 1px solid #5c5b5b;
+        border-radius: 5px;
+        background-color: #1e375079;
+        color: #fff;
+        outline: none;
+        text-indent: 5px;
+        width: 100%;
+        padding: 5px 54px 5px 5px;
+        box-sizing: border-box;
+    }
+
+    &__new-bet--btn {
+        background: transparent;
+        color: #469879;
+        border: none;
+        position: absolute;
+        top: 12px;
+        right: 5px;
+    }
+
+    &__new-info {
+        margin-top: 5px;
+    }
+
+    &__new-commission {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__new-sum--text {
+        padding-right: 5px;
+    }
+
+    &__new-total {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__new-btn {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 35px;
+    }
+
+    &__new-cancel,
+    &__new-create {
+        border: none;
+        border-radius: 5px;
+        max-width: 140px;
+        width: 100vw;
+        height: 35px;
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &__new-cancel {
+        background: repeating-linear-gradient(45deg, #555972, #555972 10px, #41465f 10px, #41465f 20px);
+    }
+
+    &__new-create {
+        background: repeating-linear-gradient(45deg, #5c69c0, #5c69c0 10px, #43509b 10px, #43509b 20px);
+    }
+
+    &__new-blur {
+        background-color: #02251221;
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        z-index: 1;
+    }
+}

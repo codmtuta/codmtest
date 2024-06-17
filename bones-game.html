@@ -8,8 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lunasima:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/reset.css">
-  <link rel="stylesheet" type="text/css" href="css/styles-main.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="shortcut icon" href="images/poker.ico" type="image/x-icon">
 </head>
 
@@ -49,156 +48,157 @@
 
     <main class="main" style="padding: 115px 15px;">
       <div class="container">
-
-        <div class="bones__games">
-          <div class="bones__game">
-            <div class="bones__header">
-              <span>UserName</span>
-              <div class="bones__bet">
-                <span>Ставка:</span>
-                <span>10</span>$
-              </div>
-            </div>
-
-            <div class="bones__body">
-              <div class="bones__item">
-                <img class="bones__img" src="images/faces/ava-4.jpg" alt="">
-              </div>
-              <button class="bones__btn spiner__btn" id="roll">
-                <div class="bones__btn-animation">Ожидание игрока</div>
-              </button>
-            </div>
-
-            <div class="bones__result" style=" display: none;">
-              <div class="bones__result-rival">
-                <img class="bones__result-rival--img" src="images/faces/ava-4.jpg" alt="">
-                <div class="bones__result-rival--bones">
-                  <span class="bones__user-result">
-                    <div id='dice1' class="dice dice-one">
-                      <div id="dice-one-side-one" class='side one'>
-                        <div class="dot__bones one-1"></div>
-                      </div>
-                      <div id="dice-one-side-two" class='side two'>
-                        <div class="dot__bones two-1"></div>
-                        <div class="dot__bones two-2"></div>
-                      </div>
-                      <div id="dice-one-side-three" class='side three'>
-                        <div class="dot__bones three-1"></div>
-                        <div class="dot__bones three-2"></div>
-                        <div class="dot__bones three-3"></div>
-                      </div>
-                      <div id="dice-one-side-four" class='side four'>
-                        <div class="dot__bones four-1"></div>
-                        <div class="dot__bones four-2"></div>
-                        <div class="dot__bones four-3"></div>
-                        <div class="dot__bones four-4"></div>
-                      </div>
-                      <div id="dice-one-side-five" class='side five'>
-                        <div class="dot__bones five-1"></div>
-                        <div class="dot__bones five-2"></div>
-                        <div class="dot__bones five-3"></div>
-                        <div class="dot__bones five-4"></div>
-                        <div class="dot__bones five-5"></div>
-                      </div>
-                      <div id="dice-one-side-six" class='side six'>
-                        <div class="dot__bones six-1"></div>
-                        <div class="dot__bones six-2"></div>
-                        <div class="dot__bones six-3"></div>
-                        <div class="dot__bones six-4"></div>
-                        <div class="dot__bones six-5"></div>
-                        <div class="dot__bones six-6"></div>
-                      </div>
-                    </div>
-                  </span>
+        <div class="bones">
+          <div class="bones__games">
+            <div class="bones__game">
+              <div class="bones__header">
+                <span>UserName</span>
+                <div class="bones__bet">
+                  <span>Ставка:</span>
+                  <span>10</span>$
                 </div>
               </div>
-              <div class="bones__result-text">
-                <span class="bones__result-win">ПОБЕДА</span>
-                <span class="bones__result-draw">НИЧЬЯ</span>
-                <span class="bones__result-defeat">ПОРАЖЕНИЕ</span>
-              </div>
-              <div class="bones__result-my">
-                <div class="bones__result-my--bones">
-                  <span class="bones__cpu-result">
-                    <div id='dice2' class="dice dice-two">
-                      <div id="dice-two-side-one" class='side one'>
-                        <div class="dot__bones one-1"></div>
-                      </div>
-                      <div id="dice-two-side-two" class='side two'>
-                        <div class="dot__bones two-1"></div>
-                        <div class="dot__bones two-2"></div>
-                      </div>
-                      <div id="dice-two-side-three" class='side three'>
-                        <div class="dot__bones three-1"></div>
-                        <div class="dot__bones three-2"></div>
-                        <div class="dot__bones three-3"></div>
-                      </div>
-                      <div id="dice-two-side-four" class='side four'>
-                        <div class="dot__bones four-1"></div>
-                        <div class="dot__bones four-2"></div>
-                        <div class="dot__bones four-3"></div>
-                        <div class="dot__bones four-4"></div>
-                      </div>
-                      <div id="dice-two-side-five" class='side five'>
-                        <div class="dot__bones five-1"></div>
-                        <div class="dot__bones five-2"></div>
-                        <div class="dot__bones five-3"></div>
-                        <div class="dot__bones five-4"></div>
-                        <div class="dot__bones five-5"></div>
-                      </div>
-                      <div id="dice-two-side-six" class='side six'>
-                        <div class="dot__bones six-1"></div>
-                        <div class="dot__bones six-2"></div>
-                        <div class="dot__bones six-3"></div>
-                        <div class="dot__bones six-4"></div>
-                        <div class="dot__bones six-5"></div>
-                        <div class="dot__bones six-6"></div>
-                      </div>
-                    </div>
-                  </span>
+
+              <div class="bones__body">
+                <div class="bones__item">
+                  <img class="bones__img" src="images/faces/ava-4.jpg" alt="">
                 </div>
-                <img class="bones__result-my--img" src="images/ava.jpg" alt="">
+                <button class="bones__btn spiner__btn" id="roll">
+                  <div class="bones__btn-animation">Ожидание игрока</div>
+                </button>
               </div>
-            </div>
-          </div>
 
-        </div>
-
-        <div class="bones__new-box">
-          <div class="bones__new-window window-height">
-
-            <div class="bones__new-block">
-              <img src="images/bones/bones.png" alt="">
-            </div>
-
-            <div class="bones__new-bet">
-              <span class="bones__new-text">Выберите ставку:</span>
-              <input class="bones__new-bet--input input-field" type="number">
-              <div class="bones__new-bet--btn">
-                <button class="bones__new-bet--button active-bet">1$</button>
-                <button class="bones__new-bet--button">2$</button>
-                <button class="bones__new-bet--button">5$</button>
-                <button class="bones__new-bet--button">10$</button>
-                <button class="bones__new-bet--button">20$</button>
+              <div class="bones__result" style=" display: none;">
+                <div class="bones__result-rival">
+                  <img class="bones__result-rival--img" src="images/faces/ava-4.jpg" alt="">
+                  <div class="bones__result-rival--bones">
+                    <span class="bones__user-result">
+                      <div id='dice1' class="dice dice-one">
+                        <div id="dice-one-side-one" class='side one'>
+                          <div class="dot__bones one-1"></div>
+                        </div>
+                        <div id="dice-one-side-two" class='side two'>
+                          <div class="dot__bones two-1"></div>
+                          <div class="dot__bones two-2"></div>
+                        </div>
+                        <div id="dice-one-side-three" class='side three'>
+                          <div class="dot__bones three-1"></div>
+                          <div class="dot__bones three-2"></div>
+                          <div class="dot__bones three-3"></div>
+                        </div>
+                        <div id="dice-one-side-four" class='side four'>
+                          <div class="dot__bones four-1"></div>
+                          <div class="dot__bones four-2"></div>
+                          <div class="dot__bones four-3"></div>
+                          <div class="dot__bones four-4"></div>
+                        </div>
+                        <div id="dice-one-side-five" class='side five'>
+                          <div class="dot__bones five-1"></div>
+                          <div class="dot__bones five-2"></div>
+                          <div class="dot__bones five-3"></div>
+                          <div class="dot__bones five-4"></div>
+                          <div class="dot__bones five-5"></div>
+                        </div>
+                        <div id="dice-one-side-six" class='side six'>
+                          <div class="dot__bones six-1"></div>
+                          <div class="dot__bones six-2"></div>
+                          <div class="dot__bones six-3"></div>
+                          <div class="dot__bones six-4"></div>
+                          <div class="dot__bones six-5"></div>
+                          <div class="dot__bones six-6"></div>
+                        </div>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+                <div class="bones__result-text">
+                  <span class="bones__result-win">ПОБЕДА</span>
+                  <span class="bones__result-draw">НИЧЬЯ</span>
+                  <span class="bones__result-defeat">ПОРАЖЕНИЕ</span>
+                </div>
+                <div class="bones__result-my">
+                  <div class="bones__result-my--bones">
+                    <span class="bones__cpu-result">
+                      <div id='dice2' class="dice dice-two">
+                        <div id="dice-two-side-one" class='side one'>
+                          <div class="dot__bones one-1"></div>
+                        </div>
+                        <div id="dice-two-side-two" class='side two'>
+                          <div class="dot__bones two-1"></div>
+                          <div class="dot__bones two-2"></div>
+                        </div>
+                        <div id="dice-two-side-three" class='side three'>
+                          <div class="dot__bones three-1"></div>
+                          <div class="dot__bones three-2"></div>
+                          <div class="dot__bones three-3"></div>
+                        </div>
+                        <div id="dice-two-side-four" class='side four'>
+                          <div class="dot__bones four-1"></div>
+                          <div class="dot__bones four-2"></div>
+                          <div class="dot__bones four-3"></div>
+                          <div class="dot__bones four-4"></div>
+                        </div>
+                        <div id="dice-two-side-five" class='side five'>
+                          <div class="dot__bones five-1"></div>
+                          <div class="dot__bones five-2"></div>
+                          <div class="dot__bones five-3"></div>
+                          <div class="dot__bones five-4"></div>
+                          <div class="dot__bones five-5"></div>
+                        </div>
+                        <div id="dice-two-side-six" class='side six'>
+                          <div class="dot__bones six-1"></div>
+                          <div class="dot__bones six-2"></div>
+                          <div class="dot__bones six-3"></div>
+                          <div class="dot__bones six-4"></div>
+                          <div class="dot__bones six-5"></div>
+                          <div class="dot__bones six-6"></div>
+                        </div>
+                      </div>
+                    </span>
+                  </div>
+                  <img class="bones__result-my--img" src="images/ava.jpg" alt="">
+                </div>
               </div>
-            </div>
-
-            <div class="bones__new-btn">
-              <button class="bones__new-cancel">
-                <div>Отмена</div>
-              </button>
-              <button class="bones__new-create">
-                <div>Создать</div>
-              </button>
             </div>
 
           </div>
-          <div class="bones__new-blur"></div>
+
+          <div class="modal">
+            <div class="modal-window window-height">
+
+              <div class="modal-dialog">
+                <img src="images/bones/bones.png" alt="">
+              </div>
+
+              <div class="modal-body">
+                <span class="modal-text">Выберите ставку:</span>
+                <input class="modal-input input-field" type="number">
+                <div class="modal-btn">
+                  <button class="modal-button active-bet">1$</button>
+                  <button class="modal-button">2$</button>
+                  <button class="modal-button">5$</button>
+                  <button class="modal-button">10$</button>
+                  <button class="modal-button">20$</button>
+                </div>
+              </div>
+
+              <div class="modal-footer">
+                <button class="modal-cancel">
+                  <div>Отмена</div>
+                </button>
+                <button class="modal-create">
+                  <div>Создать</div>
+                </button>
+              </div>
+
+            </div>
+            <div class="modal-blur"></div>
+          </div>
         </div>
       </div>
 
-      <div class="bones__new-game pointcursor">
-        <img class="bones__new-game--btn" src="images/icons/button-plus.svg" alt="">
+      <div class="plus__new-game pointcursor">
+        <img class="plus__new-game--btn" src="images/icons/button-plus.svg" alt="">
       </div>
     </main>
 
@@ -209,28 +209,28 @@
           <div class="navbar__items">
 
             <ul class="navbar__nav">
-              <li class="navbat__item">
+              <li class="navbar__item">
                 <a class="navbar__link" href="index.html">
                   <img class="navbar__img" src="images/icons/home.svg" alt="home">
                   <p class="navbar__text">Главная</p>
                 </a>
               </li>
 
-              <li class="navbat__item">
+              <li class="navbar__item">
                 <a class="navbar__link" href="wallet.html">
                   <img class="navbar__img" src="images/icons/wallet.svg" alt="wallet">
                   <p class="navbar__text">Кошелек</p>
                 </a>
               </li>
 
-              <li class="navbat__item">
+              <li class="navbar__item">
                 <a class="navbar__link" href="story.html">
                   <img class="navbar__img" src="images/icons/work-history.svg" alt="story">
                   <p class="navbar__text">История</p>
                 </a>
               </li>
 
-              <li class="navbat__item">
+              <li class="navbar__item">
                 <a class="navbar__link" href="account.html">
                   <img class="navbar__img" src="images/icons/account.svg" alt="account">
                   <p class="navbar__text">Профиль</p>

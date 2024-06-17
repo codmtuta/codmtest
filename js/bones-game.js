@@ -6,9 +6,9 @@ const elDiceOne = document.getElementById('dice1'),
     bonesWin = document.querySelector('.bones__result-win'),
     bonesDraw = document.querySelector('.bones__result-draw'),
     bonesDefeat = document.querySelector('.bones__result-defeat'),
-    bonesNewBox = document.querySelector('.bones__new-box'),
-    bonesNewGame = document.querySelector('.bones__new-game'),
-    bonesNewCancel = document.querySelector('.bones__new-cancel');
+    bonesNewBox = document.querySelector('.modal'),
+    bonesNewGame = document.querySelector('.plus__new-game'),
+    bonesNewCancel = document.querySelector('.modal-cancel');
 
 bonesNewGame.addEventListener('click', () => {
     bonesNewBox.style.display = 'block';
