@@ -3127,6 +3127,37 @@ input[type=checkbox] {
   display: flex;
   justify-content: space-between;
 }
+.wallet__notification {
+  display: none;
+  position: relative;
+}
+.wallet__notification-close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+.wallet__notification-close img {
+  width: 17px;
+}
+.wallet__notification-block {
+  text-align: center;
+}
+.wallet__notification-title {
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+.wallet__notification-text {
+  font-size: 14px;
+  line-height: 22px;
+  color: #6b92b2;
+}
+.wallet__notification-link {
+  text-decoration: underline;
+}
+
+.notification-top {
+  transform: translate(-50%, -60%) !important;
+}
 
 .spiner__btn {
   position: relative;
@@ -3272,6 +3303,80 @@ input[type=checkbox] {
 
 .active-bet {
   background: #226eb9;
+}
+
+.blocked {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+  justify-content: center;
+  height: 75vh;
+}
+.blocked__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 15px;
+}
+.blocked__img img {
+  width: 50px;
+}
+.blocked__title {
+  color: #bebebe;
+  font-size: 30px;
+  text-align: center;
+  max-width: 270px;
+}
+.blocked__text {
+  color: #a7a7a7;
+  text-align: center;
+  max-width: 270px;
+}
+.blocked__link {
+  color: #a7a7a7;
+  text-decoration: underline;
+}
+
+.checkmark-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkmark {
+  width: 56px;
+  height: 56px;
+  stroke-width: 3;
+  stroke: #4CAF50;
+  stroke-miterlimit: 10;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation: draw 0.8s ease forwards;
+}
+
+.checkmark__circle {
+  stroke-dasharray: 157;
+  stroke-dashoffset: 157;
+  animation: draw-circle 0.6s ease forwards;
+}
+
+.checkmark__check {
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: draw-check 0.3s 0.6s ease forwards;
+}
+
+@keyframes draw-circle {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw-check {
+  100% {
+    stroke-dashoffset: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

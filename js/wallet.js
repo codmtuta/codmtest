@@ -68,3 +68,24 @@ if (isMobile) {
     });
 }
 
+// Эмулируем открытие окна через 3 секунды
+const notificationClose = document.querySelectorAll('.wallet__notification-close'),
+    notificationConclusionWindows = document.querySelector('.wallet__notification-conclusion'),
+    notificationRefillWindows = document.querySelector('.wallet__notification-refill');
+
+function emulationOpen(open, close) {
+    setTimeout(() => {
+        open.style.display = 'block';
+        document.querySelector('.checkmark').classList.add('animate');
+    }, 3000);
+
+    close.forEach(item => {
+        item.addEventListener('click', () => {
+            open.style.display = 'none';
+        });
+    });
+};
+emulationOpen(notificationConclusionWindows, notificationClose);
+// emulationOpen(notificationRefillWindows, notificationClose);
+
+

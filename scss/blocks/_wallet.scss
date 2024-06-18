@@ -252,4 +252,42 @@
         display: flex;
         justify-content: space-between;
     }
+
+    &__notification {
+        display: none;
+        position: relative;
+    }
+
+    &__notification-close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+
+    &__notification-close img {
+        width: 17px;
+    }
+
+    &__notification-block {
+        text-align: center;
+    }
+
+    &__notification-title {
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+
+    &__notification-text {
+        font-size: 14px;
+        line-height: 22px;
+        color: #6b92b2;
+    }
+
+    &__notification-link {
+        text-decoration: underline;
+    }
+}
+
+.notification-top {
+    transform: translate(-50%, -60%) !important;
 }
