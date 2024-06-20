@@ -448,4 +448,24 @@
         gap: 20px;
         margin-top: 20px;
     }
+
+    &__agreement {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    &__agreement-link {
+        padding: 5px 10px;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    &__agreement-link:hover {
+        background-color: #888888;
+    }
+
+    &__agreement-link:active {
+        background-color: #888888;
+    }
 }

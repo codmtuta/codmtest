@@ -710,6 +710,22 @@ button {
   gap: 20px;
   margin-top: 20px;
 }
+.account__agreement {
+  text-align: center;
+  margin: 10px 0;
+}
+.account__agreement-link {
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  -webkit-tap-highlight-color: transparent;
+}
+.account__agreement-link:hover {
+  background-color: #888888;
+}
+.account__agreement-link:active {
+  background-color: #888888;
+}
 
 .bones__game {
   border-radius: 10px;
@@ -3389,7 +3405,7 @@ input[type=checkbox] {
   padding-top: 10px;
 }
 .agreement__item::before {
-  content: counters(item, ".") ". ";
+  content: counters(item, ".") " ";
   font-weight: bold;
   padding-right: 5px;
 }
@@ -3402,7 +3418,7 @@ input[type=checkbox] {
   padding-top: 10px;
 }
 .agreement__subitem::before {
-  content: counters(item, ".") ".";
+  content: counters(item, ".") "." counter(subitem) " ";
   padding-right: 5px;
 }
 .agreement__terms {
