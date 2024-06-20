@@ -68,7 +68,7 @@ if (isMobile) {
     });
 }
 
-// Эмулируем открытие окна через 3 секунды
+// Эмуляция открытия окна через 3 секунды
 const notificationClose = document.querySelectorAll('.wallet__notification-close'),
     notificationConclusionWindows = document.querySelector('.wallet__notification-conclusion'),
     notificationRefillWindows = document.querySelector('.wallet__notification-refill');

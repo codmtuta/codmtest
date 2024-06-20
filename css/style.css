@@ -101,7 +101,6 @@ nav ul {
 }
 
 ul,
-li,
 ol {
   list-style-type: none;
 }
@@ -3263,7 +3262,7 @@ input[type=checkbox] {
   justify-content: space-between;
   margin-top: 35px;
 }
-.modal-cancel, .modal-create {
+.modal-style-btn, .modal-cancel, .modal-create {
   border: none;
   border-radius: 5px;
   max-width: 140px;
@@ -3377,6 +3376,82 @@ input[type=checkbox] {
   100% {
     stroke-dashoffset: 0;
   }
+}
+.agreement {
+  line-height: 150%;
+}
+.agreement__list {
+  counter-reset: item;
+  margin-bottom: 20px;
+}
+.agreement__item {
+  counter-increment: item;
+  padding-top: 10px;
+}
+.agreement__item::before {
+  content: counters(item, ".") ". ";
+  font-weight: bold;
+  padding-right: 5px;
+}
+.agreement__sublist {
+  counter-reset: subitem;
+  margin-left: 20px;
+}
+.agreement__subitem {
+  counter-increment: subitem;
+  padding-top: 10px;
+}
+.agreement__subitem::before {
+  content: counters(item, ".") ".";
+  padding-right: 5px;
+}
+.agreement__terms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.agreement__terms-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.agreement__terms-checkbox {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #c5c5c5;
+  border-radius: 3px;
+  outline: none;
+}
+.agreement__terms-checkbox:checked::before {
+  content: "✓";
+  font-size: 27px;
+  color: #fff;
+  text-align: center;
+  line-height: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  border-radius: 2px;
+}
+.agreement__terms-text {
+  padding-left: 5px;
+  font-weight: bold;
+}
+.agreement__terms-btn {
+  color: #485292;
+  background: repeating-linear-gradient(45deg, #b1b8e9, #b1b8e9 10px, #d1d7f7 10px, #d1d7f7 20px);
+  margin-top: 10px;
+}
+.agreement__terms-btn.active {
+  color: #fff;
+  background: repeating-linear-gradient(45deg, #5c69c0, #5c69c0 10px, #43509b 10px, #43509b 20px);
 }
 
 /*# sourceMappingURL=style.css.map */
