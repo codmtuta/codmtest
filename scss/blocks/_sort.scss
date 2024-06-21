@@ -1,0 +1,49 @@
+.sort {
+    padding: 10px 15px;
+
+    &__items {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        position: relative;
+    }
+
+    &__games {
+        border: 1px solid #5c5b5b;
+        border-radius: 10px;
+        background-color: #223146;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__games-img {
+        width: 20px;
+        transform: rotate(90deg);
+    }
+
+    &__window {
+        position: absolute;
+        right: 34px;
+        top: 0;
+        background-color: #223146;
+        max-width: 160px;
+        border: 1px solid #5c5b5b;
+        border-radius: 15px;
+        padding: 15px;
+        z-index: 2;
+        transition: top 0.3s ease;
+    }
+
+    &__gap {
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    &__text {
+        cursor: pointer;
+    }
+}

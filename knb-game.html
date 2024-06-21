@@ -45,9 +45,34 @@
 
     <main class="main" style="padding: 115px 15px;">
       <div class="container">
-        <div class="search__btn">
-          <input class="search__btn-input" type="text" placeholder="Поиск игры">
+        <div class="search__btn sort">
+          <div class="sort__items">
+
+            <div class="game__counter">
+              <p class="game__counter-text">Доступные игры:
+              <p class="game__counter-num">11</p>
+              </p>
+            </div>
+
+            <div class="sort__box">
+              <button class="sort__games">
+                <img src="./images/icons/arrow-switch.svg" alt="" class="sort__games-img">
+              </button>
+              <div class="modal sortopen">
+                <div class="sort__window">
+                  <div class="modal-body sort__gap">
+                    <span class="sort__text">По умолчанию</span>
+                    <span class="sort__text">По возрастанию</span>
+                    <span class="sort__text">По убыванию</span>
+                    <span class="sort__text">Только мои игры</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
+
         <div class="knb__games">
           <div class="knb__game">
             <div class="knb__header">
@@ -109,7 +134,7 @@
 
         </div>
 
-        <div class="modal">
+        <div class="modal newknb">
           <div class="modal-window window-height">
 
             <div class="modal-dialog">

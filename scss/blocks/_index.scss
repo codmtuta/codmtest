@@ -79,6 +79,14 @@ input[type="checkbox"] {
     box-sizing: border-box;
 }
 
+.game__counter {
+    display: flex;
+
+    &-text {
+        padding-right: 5px;
+    }
+}
+
 @media (max-width: 449px) {
     .games__img {
         max-width: 120px;

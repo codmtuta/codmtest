@@ -12,11 +12,13 @@ const stoneRival = document.querySelector('.knb__result-rival--stone');
 const paperMy = document.querySelector('.knb__result-my--paper');
 const scissorsMy = document.querySelector('.knb__result-my--scissors');
 const stoneMy = document.querySelector('.knb__result-my--stone');
-const newGameKnb = document.querySelector('.modal');
+const newGameKnb = document.querySelector('.newknb');
 const newGameBtn = document.querySelector('.plus__new-game--btn');
 const newGameClose = document.querySelector('.modal-cancel');
 const userResult = document.querySelector(".user_result");
 const cpuResult = document.querySelector(".cpu_result");
+const sortOpen = document.querySelector('.sortopen');
+const sortBtn = document.querySelector('.sort__games');
 
 
 knbChoice.style.display = "none";
@@ -38,6 +40,10 @@ newGameBtn.addEventListener('click', function () {
 
 newGameClose.addEventListener('click', function () {
     newGameKnb.style.display = "none";
+});
+
+sortBtn.addEventListener('click', function () {
+    sortOpen.classList.toggle('visible');
 });
 
 knbBtn.addEventListener('click', function () {

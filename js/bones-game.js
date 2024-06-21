@@ -6,9 +6,15 @@ const elDiceOne = document.getElementById('dice1'),
     bonesWin = document.querySelector('.bones__result-win'),
     bonesDraw = document.querySelector('.bones__result-draw'),
     bonesDefeat = document.querySelector('.bones__result-defeat'),
-    bonesNewBox = document.querySelector('.modal'),
+    bonesNewBox = document.querySelector('.newbones'),
     bonesNewGame = document.querySelector('.plus__new-game'),
     bonesNewCancel = document.querySelector('.modal-cancel');
+const sortOpen = document.querySelector('.sortopen');
+const sortBtn = document.querySelector('.sort__games');
+
+sortBtn.addEventListener('click', function () {
+    sortOpen.classList.toggle('visible');
+});
 
 bonesNewGame.addEventListener('click', () => {
     bonesNewBox.style.display = 'block';

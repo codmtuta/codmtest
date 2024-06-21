@@ -1109,6 +1109,13 @@ input[type=checkbox] {
   box-sizing: border-box;
 }
 
+.game__counter {
+  display: flex;
+}
+.game__counter-text {
+  padding-right: 5px;
+}
+
 @media (max-width: 449px) {
   .games__img {
     max-width: 120px;
@@ -3320,6 +3327,10 @@ input[type=checkbox] {
   background: #226eb9;
 }
 
+.modal.visible {
+  display: block;
+}
+
 .blocked {
   display: flex;
   flex-direction: column;
@@ -3405,7 +3416,7 @@ input[type=checkbox] {
   padding-top: 10px;
 }
 .agreement__item::before {
-  content: counters(item, ".") " ";
+  content: counters(item, ".") ".";
   font-weight: bold;
   padding-right: 5px;
 }
@@ -3468,6 +3479,50 @@ input[type=checkbox] {
 .agreement__terms-btn.active {
   color: #fff;
   background: repeating-linear-gradient(45deg, #5c69c0, #5c69c0 10px, #43509b 10px, #43509b 20px);
+}
+
+.sort {
+  padding: 10px 15px;
+}
+.sort__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+.sort__games {
+  border: 1px solid #5c5b5b;
+  border-radius: 10px;
+  background-color: #223146;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sort__games-img {
+  width: 20px;
+  transform: rotate(90deg);
+}
+.sort__window {
+  position: absolute;
+  right: 34px;
+  top: 0;
+  background-color: #223146;
+  max-width: 160px;
+  border: 1px solid #5c5b5b;
+  border-radius: 15px;
+  padding: 15px;
+  z-index: 2;
+  transition: top 0.3s ease;
+}
+.sort__gap {
+  gap: 15px;
+  font-size: 16px;
+}
+.sort__text {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
