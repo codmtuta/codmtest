@@ -138,17 +138,22 @@
           <div class="modal-window window-height">
 
             <div class="modal-dialog">
-              <span class="modal-text">Выберите жест:</span>
-              <div class="knb__new-imgs">
-                <img class="knb__new-img knb__new-paper active-imgs" src="images/knb-hands/paper.png" alt="">
-                <img class="knb__new-img knb__new-scissors" src="images/knb-hands/scissors.png" alt="">
-                <img class="knb__new-img knb__new-stone" src="images/knb-hands/rock.png" alt="">
+              <div class="knb__new-gesture">
+                <span class="modal-text textTitleOne">Выберите жест:</span>
+                <span class="modal-text textTitleSum">Колличестов игр:</span>
+                <input class="modal-input input-field inputSum" type="number" placeholder="Макс. игр 10">
+                <div class="knb__new-imgs">
+                  <img class="knb__new-img knb__new-paper active-imgs" src="images/knb-hands/paper.png" alt="">
+                  <img class="knb__new-img knb__new-scissors" src="images/knb-hands/scissors.png" alt="">
+                  <img class="knb__new-img knb__new-stone" src="images/knb-hands/rock.png" alt="">
+                </div>
               </div>
             </div>
 
             <div class="modal-body">
-              <span class="modal-text">Выберите ставку:</span>
-              <input class="modal-input input-field" type="number">
+              <span class="modal-text textTitleTwo">Укажите ставку:</span>
+              <span class="modal-text textTitleThree">Сумма ставок:</span>
+              <input class="modal-input input-field" type="number" placeholder="Минимальная ставка 1$">
               <div class="modal-btn">
                 <button class="modal-button active-bet">1$</button>
                 <button class="modal-button">2$</button>
@@ -156,6 +161,25 @@
                 <button class="modal-button">10$</button>
                 <button class="modal-button">20$</button>
               </div>
+            </div>
+
+            <div class="toggle-switch">
+              <span>Несколько игр:</span>
+              <label class="toggle-switch__label">
+                <input class="toggleInput" type="checkbox">
+                <span class="toggle-switch__slider round"></span>
+              </label>
+            </div>
+
+            <div class="knb__private">
+              <div class="toggle-switch">
+                <span>Приватная игра:</span>
+                <label class="toggle-switch__label">
+                  <input class="modal__private-checkbox toggleCheckbox" type="checkbox">
+                  <span class="toggle-switch__slider round"></span>
+                </label>
+              </div>
+              <input class="modal__private-input hidden-input input-field" type="number" placeholder="Введите пароль">
             </div>
 
             <div class="modal-footer">

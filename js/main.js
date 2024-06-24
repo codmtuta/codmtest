@@ -113,6 +113,65 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    function checkboxes(checkboxSelector, hiddenInputSelector) {
+        const checkboxes = document.querySelectorAll(checkboxSelector),
+            hiddenInput = document.querySelector(hiddenInputSelector);
+
+        hiddenInput.style.display = 'none';
+
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', () => {
+
+                if (checkbox.checked) {
+                    hiddenInput.style.display = 'block';
+                } else {
+                    hiddenInput.style.display = 'none';
+                }
+            });
+        });
+    }
+
+    checkboxes('.toggleCheckbox', '.hidden-input');
+
+    function hidden(checkboxSelector, textOneSelector, textTitleSumSelector, headersImgSelector, InputSelector, textTwoSelector, textRandomSelector) {
+        const checkboxes = document.querySelectorAll(checkboxSelector),
+            textTitle1 = textOneSelector ? document.querySelector(textOneSelector) : null,
+            textTitleSum = document.querySelector(textTitleSumSelector),
+            headersImg = document.querySelector(headersImgSelector),
+            inputSum = document.querySelector(InputSelector),
+            textTitle2 = document.querySelector(textTwoSelector),
+            textTitle3 = document.querySelector(textRandomSelector);
+
+        if (textTitleSum) textTitleSum.style.display = 'none';
+        if (inputSum) inputSum.style.display = 'none';
+        if (textTitle2) textTitle2.style.display = 'none';
+
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', () => {
+                if (checkbox.checked) {
+                    if (textTitleSum) textTitleSum.style.display = 'block';
+                    if (inputSum) inputSum.style.display = 'block';
+                    if (textTitle3) textTitle3.style.display = 'block';
+                    if (textTitle1) textTitle1.style.display = 'none';
+                    if (textTitle2) textTitle2.style.display = 'none';
+                    if (headersImg) headersImg.style.display = 'none';
+                } else {
+                    if (textTitleSum) textTitleSum.style.display = 'none';
+                    if (inputSum) inputSum.style.display = 'none';
+                    if (textTitle3) textTitle3.style.display = 'none';
+                    if (textTitle1) textTitle1.style.display = 'block';
+                    if (textTitle2) textTitle2.style.display = 'block';
+                    if (headersImg) headersImg.style.display = 'flex';
+                }
+            });
+        });
+    }
+
+    hidden('.toggleInput', '.textTitleOne', '.textTitleSum', '.knb__new-imgs', '.inputSum', '.textTitleTwo', '.textTitleThree');
+
+    hidden('.toggleInput', null, '.textTitleSum', '.bones__new-img', '.inputSum', '.textTitleTwo', '.textTitleThree');
+
+
 });
 
 

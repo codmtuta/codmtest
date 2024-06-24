@@ -191,12 +191,17 @@
             <div class="modal-window window-height">
 
               <div class="modal-dialog">
-                <img src="images/bones/bones.png" alt="">
+                <div class="bones__new-img">
+                  <img src="images/bones/bones.png" alt="">
+                </div>
+                <span class="modal-text textTitleSum">Колличестов игр:</span>
+                <input class="modal-input input-field inputSum" type="number" placeholder="Макс. игр 10">
               </div>
 
               <div class="modal-body">
-                <span class="modal-text">Выберите ставку:</span>
-                <input class="modal-input input-field" type="number">
+                <span class="modal-text textTitleTwo">Укажите ставку:</span>
+                <span class="modal-text textTitleThree">Сумма ставок:</span>
+                <input class="modal-input input-field" type="number" placeholder="Минимальная ставка 1$">
                 <div class="modal-btn">
                   <button class="modal-button active-bet">1$</button>
                   <button class="modal-button">2$</button>
@@ -204,6 +209,25 @@
                   <button class="modal-button">10$</button>
                   <button class="modal-button">20$</button>
                 </div>
+              </div>
+
+              <div class="toggle-switch">
+                <span>Несколько игр:</span>
+                <label class="toggle-switch__label">
+                  <input class="toggleInput" type="checkbox">
+                  <span class="toggle-switch__slider round"></span>
+                </label>
+              </div>
+
+              <div class="knb__private">
+                <div class="toggle-switch">
+                  <span>Приватная игра:</span>
+                  <label class="toggle-switch__label">
+                    <input class="modal__private-checkbox toggleCheckbox" type="checkbox">
+                    <span class="toggle-switch__slider round"></span>
+                  </label>
+                </div>
+                <input class="modal__private-input hidden-input input-field" type="number" placeholder="Введите пароль">
               </div>
 
               <div class="modal-footer">

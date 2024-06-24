@@ -41,35 +41,6 @@
     background: #226eb9;
 }
 
-.search__table-input {
-    border: 1px solid #5c5b5b;
-    border-radius: 5px;
-    background-color: #1e375079;
-    color: #fff;
-    outline: none;
-    text-indent: 5px;
-    width: 100%;
-    padding: 5px;
-    margin: 10px 0;
-    box-sizing: border-box;
-}
-
-.search__table-input:valid {
-    font-family: "Lunasima", sans-serif;
-}
-
-.search__table-input:focus {
-    font-family: "Lunasima", sans-serif;
-    outline: 2px solid #315980;
-    background-color: #1e375079;
-    color: #fff;
-}
-
-.search__table-input::placeholder {
-    color: #bebebe77;
-    font-family: "Lunasima", sans-serif;
-}
-
 .search__back-create {
     display: flex;
     justify-content: space-around;

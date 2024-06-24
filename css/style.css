@@ -871,8 +871,11 @@ button {
   padding: 3px;
   width: 40px;
 }
-
-.modal-dialog img {
+.bones__new-img {
+  display: flex;
+  justify-content: center;
+}
+.bones__new-img img {
   width: 50px;
 }
 
@@ -1475,62 +1478,13 @@ input[type=checkbox] {
 .newpoker__filters {
   margin: 20px 0 10px;
 }
-.newpoker__players, .newpoker__limit, .newpoker__table, .newpoker__private {
+.newpoker__players, .newpoker__limit, .newpoker__table {
   margin-bottom: 20px;
 }
 .newpoker__players-btn, .newpoker__limit-btn {
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
-}
-.newpoker__table-input, .newpoker__private-input {
-  border: 1px solid #5c5b5b;
-  border-radius: 5px;
-  background-color: rgba(30, 55, 80, 0.4745098039);
-  color: #fff;
-  outline: none;
-  text-indent: 5px;
-  width: 100%;
-  padding: 5px;
-  margin: 10px 0;
-  box-sizing: border-box;
-}
-.newpoker__table-input:valid, .newpoker__private-input:valid {
-  font-family: "Lunasima", sans-serif;
-}
-.newpoker__table-input:focus, .newpoker__private-input:focus {
-  outline: 2px solid #315980;
-  background-color: rgba(30, 55, 80, 0.4745098039);
-  color: #fff;
-}
-.newpoker__table-input::placeholder, .newpoker__private-input::placeholder {
-  color: rgba(190, 190, 190, 0.4666666667);
-  font-family: "Lunasima", sans-serif;
-}
-.newpoker__private-checkbox {
-  position: relative;
-  width: 20px;
-  height: 20px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: 1px solid #c5c5c5;
-  border-radius: 3px;
-  outline: none;
-}
-.newpoker__private-checkbox:checked::before {
-  content: "✓";
-  font-size: 14px;
-  color: #fff;
-  text-align: center;
-  line-height: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #333;
-  border-radius: 2px;
 }
 .newpoker__back-create {
   display: flex;
@@ -2162,35 +2116,6 @@ input[type=checkbox] {
 
 .clicked {
   background: #226eb9;
-}
-
-.search__table-input {
-  border: 1px solid #5c5b5b;
-  border-radius: 5px;
-  background-color: rgba(30, 55, 80, 0.4745098039);
-  color: #fff;
-  outline: none;
-  text-indent: 5px;
-  width: 100%;
-  padding: 5px;
-  margin: 10px 0;
-  box-sizing: border-box;
-}
-
-.search__table-input:valid {
-  font-family: "Lunasima", sans-serif;
-}
-
-.search__table-input:focus {
-  font-family: "Lunasima", sans-serif;
-  outline: 2px solid #315980;
-  background-color: rgba(30, 55, 80, 0.4745098039);
-  color: #fff;
-}
-
-.search__table-input::placeholder {
-  color: rgba(190, 190, 190, 0.4666666667);
-  font-family: "Lunasima", sans-serif;
 }
 
 .search__back-create {
@@ -3220,6 +3145,7 @@ input[type=checkbox] {
 
 .modal {
   display: none;
+  font-size: 20px;
 }
 .modal-window {
   position: fixed;
@@ -3241,30 +3167,14 @@ input[type=checkbox] {
 .modal-dialog {
   text-align: center;
 }
-.modal-title {
-  font-size: 20px;
-}
 .modal-text {
   text-align: center;
-  font-size: 22px;
   padding-top: 20px;
 }
 .modal-body {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.modal-input {
-  margin-top: 10px;
-  border: 1px solid #5c5b5b;
-  border-radius: 5px;
-  background-color: rgba(30, 55, 80, 0.4745098039);
-  color: #fff;
-  outline: none;
-  text-indent: 5px;
-  width: 100%;
-  padding: 5px;
-  box-sizing: border-box;
 }
 .modal-btn {
   margin-top: 10px;
@@ -3283,7 +3193,52 @@ input[type=checkbox] {
 .modal-footer {
   display: flex;
   justify-content: space-between;
-  margin-top: 35px;
+  margin-top: 25px;
+}
+.modal-input, .modal__table-input, .modal__private-input {
+  border: 1px solid #5c5b5b;
+  border-radius: 5px;
+  background-color: rgba(30, 55, 80, 0.4745098039);
+  color: #fff;
+  outline: none;
+  text-indent: 5px;
+  width: 100%;
+  padding: 5px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+.modal__table-input:valid, .modal__private-input:valid {
+  font-family: "Lunasima", sans-serif;
+}
+.modal__table-input:focus, .modal__private-input:focus {
+  outline: 2px solid #315980;
+  background-color: rgba(30, 55, 80, 0.4745098039);
+  color: #fff;
+}
+.modal__private-checkbox {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #c5c5c5;
+  border-radius: 3px;
+  outline: none;
+}
+.modal__private-checkbox:checked::before {
+  content: "✓";
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  border-radius: 2px;
 }
 .modal-style-btn, .modal-cancel, .modal-create {
   border: none;
@@ -3523,6 +3478,70 @@ input[type=checkbox] {
 }
 .sort__text {
   cursor: pointer;
+}
+
+.toggle-switch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+.toggle-switch__label {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 22px;
+}
+
+.toggle-switch__label input {
+  display: none;
+}
+
+.toggle-switch__slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #354157;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.toggle-switch__slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .toggle-switch__slider {
+  background-color: #226eb9;
+}
+
+input:focus + .toggle-switch__slider {
+  box-shadow: 0 0 1px #226eb9;
+}
+
+input:checked + .toggle-switch__slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.toggle-switch__slider.round {
+  border-radius: 34px;
+}
+
+.toggle-switch__slider.round:before {
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
