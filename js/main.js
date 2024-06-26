@@ -171,7 +171,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     hidden('.toggleInput', null, '.textTitleSum', '.bones__new-img', '.inputSum', '.textTitleTwo', '.textTitleThree');
 
-
 });
 
 

@@ -87,11 +87,14 @@
             </div>
 
             <div class="newpoker__private">
-              <span>Приватная игра:</span>
-              <input class="modal__private-checkbox" type="checkbox" id="private" name="private">
-              <div id="private-options">
-                <input class="modal__private-input" type="number" name="private-limit" placeholder="Введите пароль">
+              <div class="toggle-switch">
+                <span>Приватная игра:</span>
+                <label class="toggle-switch__label">
+                  <input class="modal__private-checkbox toggleCheckbox" type="checkbox">
+                  <span class="toggle-switch__slider round"></span>
+                </label>
               </div>
+              <input class="modal__private-input hidden-input input-field" type="number" placeholder="Введите пароль">
             </div>
           </div>
 

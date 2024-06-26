@@ -8,20 +8,40 @@ const elDiceOne = document.getElementById('dice1'),
     bonesDefeat = document.querySelector('.bones__result-defeat'),
     bonesNewBox = document.querySelector('.newbones'),
     bonesNewGame = document.querySelector('.plus__new-game'),
-    bonesNewCancel = document.querySelector('.modal-cancel');
+    bonesNewCancel = document.querySelectorAll('.modal-cancel');
 const sortOpen = document.querySelector('.sortopen');
 const sortBtn = document.querySelector('.sort__games');
+const windowPassword = document.querySelector('.window-password');
+const windowOk = document.querySelector('.window-ok');
+const playGame = document.querySelector('.play-game');
 
 sortBtn.addEventListener('click', function () {
     sortOpen.classList.toggle('visible');
 });
 
-bonesNewGame.addEventListener('click', () => {
-    bonesNewBox.style.display = 'block';
-});
 
-bonesNewCancel.addEventListener('click', () => {
-    bonesNewBox.style.display = 'none';
+//-------------
+function showContent(trigger, content) {
+    trigger.addEventListener('click', function () {
+        content.style.display = "block";
+    });
+}
+showContent(bonesNewGame, bonesNewBox);
+showContent(playGame, windowPassword);
+
+function hiddenContent(trigger, content) {
+    trigger.addEventListener('click', function () {
+        content.style.display = "none";
+    });
+}
+hiddenContent(windowOk, windowPassword);
+//---------
+
+bonesNewCancel.forEach(item => {
+    item.addEventListener('click', function () {
+        bonesNewBox.style.display = 'none';
+        windowPassword.style.display = "none";
+    });
 });
 
 function displayNone(el) {
@@ -32,7 +52,7 @@ displayNone(bonesWin);
 displayNone(bonesDraw);
 displayNone(bonesDefeat);
 
-elComeOut.addEventListener('click', () => {
+windowOk.addEventListener('click', () => {
     userBody.style.display = 'none';
     result.style.display = 'flex';
 

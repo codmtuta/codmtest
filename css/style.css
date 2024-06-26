@@ -753,6 +753,9 @@ button {
 .bones__bet span {
   padding-right: 5px;
 }
+.bones__closed {
+  padding-left: 5px;
+}
 .bones__item {
   padding: 0 6px;
 }
@@ -1254,6 +1257,10 @@ input[type=checkbox] {
   padding-right: 5px;
 }
 
+.knb__closed {
+  padding-left: 5px;
+}
+
 .knb__item {
   padding: 0 6px;
 }
@@ -1458,14 +1465,6 @@ input[type=checkbox] {
 .knb__new-img {
   width: 50px;
   cursor: pointer;
-}
-
-#private-options {
-  display: none;
-}
-
-#private:checked ~ #private-options {
-  display: block;
 }
 
 .newpoker {

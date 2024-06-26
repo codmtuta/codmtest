@@ -1,7 +1,6 @@
 const knbChoice = document.querySelector('.knb__choice');
 const knbResult = document.querySelector('.knb__result');
 const knbStart = document.querySelector('.knb__body');
-const knbBtn = document.querySelector('.knb__btn');
 const choiceHands = document.querySelectorAll('.knb__choice-img');
 const knbWin = document.querySelector('.knb__result-win');
 const knbDraw = document.querySelector('.knb__result-draw');
@@ -12,13 +11,17 @@ const stoneRival = document.querySelector('.knb__result-rival--stone');
 const paperMy = document.querySelector('.knb__result-my--paper');
 const scissorsMy = document.querySelector('.knb__result-my--scissors');
 const stoneMy = document.querySelector('.knb__result-my--stone');
-const newGameKnb = document.querySelector('.newknb');
 const newGameBtn = document.querySelector('.plus__new-game--btn');
-const newGameClose = document.querySelector('.modal-cancel');
+const newGameClose = document.querySelectorAll('.modal-cancel');
 const userResult = document.querySelector(".user_result");
 const cpuResult = document.querySelector(".cpu_result");
 const sortOpen = document.querySelector('.sortopen');
 const sortBtn = document.querySelector('.sort__games');
+const knbBody = document.querySelector('.knb__body');
+const newGameKnb = document.querySelector('.newknb');
+const windowPassword = document.querySelector('.window-password');
+const windowOk = document.querySelector('.window-ok');
+const playGame = document.querySelector('.play-game');
 
 
 knbChoice.style.display = "none";
@@ -32,23 +35,34 @@ stoneRival.style.display = "none";
 paperMy.style.display = "none";
 scissorsMy.style.display = "none";
 stoneMy.style.display = "none";
-newGameKnb.style.display = "none"
+newGameKnb.style.display = "none";
 
-newGameBtn.addEventListener('click', function () {
-    newGameKnb.style.display = "block";
-});
+function showContent(trigger, content) {
+    trigger.addEventListener('click', function () {
+        content.style.display = "block";
+    });
+}
+showContent(newGameBtn, newGameKnb);
+showContent(playGame, windowPassword);
 
-newGameClose.addEventListener('click', function () {
-    newGameKnb.style.display = "none";
+function hiddenContent(trigger, content) {
+    trigger.addEventListener('click', function () {
+        content.style.display = "none";
+        knbChoice.style.display = "block";
+        knbBody.style.display = "none";
+    });
+}
+hiddenContent(windowOk, windowPassword);
+
+newGameClose.forEach(item => {
+    item.addEventListener('click', function () {
+        newGameKnb.style.display = "none";
+        windowPassword.style.display = "none";
+    });
 });
 
 sortBtn.addEventListener('click', function () {
     sortOpen.classList.toggle('visible');
-});
-
-knbBtn.addEventListener('click', function () {
-    knbStart.style.display = "none";
-    knbChoice.style.display = "block";
 });
 
 choiceHands.forEach(function (button) {
@@ -100,13 +114,6 @@ choiceHands.forEach(function (button) {
 });
 
 function showResult() {
-    paperRival.style.display = "none";
-    scissorsRival.style.display = "none";
-    stoneRival.style.display = "none";
-    paperMy.style.display = "none";
-    scissorsMy.style.display = "none";
-    stoneMy.style.display = "none";
-
     if (myChoice === 'paper') paperMy.style.display = "block";
     else if (myChoice === 'scissors') scissorsMy.style.display = "block";
     else stoneMy.style.display = "block";
@@ -131,7 +138,7 @@ function resultTime(el) {
         el.style.display = 'none';
         showResult();
     }, 1500);
-}
+};
 
 const windowHeight = document.querySelectorAll('.window-height');
 const inputFields = document.querySelectorAll('.input-field');
