@@ -45,7 +45,7 @@
                 #bc6060 10px,
                 #984646 10px,
                 #984646 20px);
-        background-position: 1px;
+        background-position: 7px;
         background-size: calc(100% + 22px);
         text-shadow:
             -1px -1px 0 #691212,
@@ -74,13 +74,7 @@
         font-size: 20px;
     }
 
-    &__counter-poker {
-        display: flex;
-        justify-content: space-between;
-        font-size: 20px;
-    }
-
-    &__counter-knb {
+    &__counter-item {
         display: flex;
         justify-content: space-between;
         font-size: 20px;

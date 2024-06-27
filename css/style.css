@@ -389,7 +389,7 @@ button {
 }
 .account__counter-box {
   background: repeating-linear-gradient(45deg, #bc6060, #bc6060 10px, #984646 10px, #984646 20px);
-  background-position: 1px;
+  background-position: 7px;
   background-size: calc(100% + 22px);
   text-shadow: -1px -1px 0 #691212, 1px -1px 0 #691212, -1px 1px 0 #691212, 1px 1px 0 #691212;
   border-radius: 0 0 5px 5px;
@@ -409,12 +409,7 @@ button {
 .account__counter-text {
   font-size: 20px;
 }
-.account__counter-poker {
-  display: flex;
-  justify-content: space-between;
-  font-size: 20px;
-}
-.account__counter-knb {
+.account__counter-item {
   display: flex;
   justify-content: space-between;
   font-size: 20px;
@@ -1263,6 +1258,7 @@ input[type=checkbox] {
 
 .knb__item {
   padding: 0 6px;
+  position: relative;
 }
 
 .knb__body {
@@ -1275,6 +1271,18 @@ input[type=checkbox] {
 .knb__img {
   width: 55px;
   border-radius: 50%;
+}
+
+.knb__hand-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 25px;
+  display: none;
+}
+
+.knb__hand-active {
+  display: block;
 }
 
 .knb__btn {

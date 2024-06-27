@@ -38,6 +38,7 @@
 
 .knb__item {
     padding: 0 6px;
+    position: relative;
 }
 
 .knb__body {
@@ -50,6 +51,18 @@
 .knb__img {
     width: 55px;
     border-radius: 50%;
+}
+
+.knb__hand-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 25px;
+    display: none;
+}
+
+.knb__hand-active {
+    display: block;
 }
 
 .knb__btn {
