@@ -11,6 +11,13 @@
     margin: 20px 0 10px;
 }
 
+.search__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
 
 .search__players,
 .search__limit,
@@ -78,7 +85,7 @@
     font-size: 16px;
     max-width: 480px;
     width: 100%;
-    padding: 15px;
+    padding: 10px 15px;
     background: repeating-linear-gradient(45deg, #0d131b, #0d131b 10px, #101721 10px, #101721 20px);
     z-index: 1;
     box-sizing: border-box;

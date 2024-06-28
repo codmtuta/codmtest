@@ -2096,6 +2096,14 @@ input[type=checkbox] {
   margin: 20px 0 10px;
 }
 
+.search__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+
 .search__players,
 .search__limit,
 .search__table {
@@ -2162,7 +2170,7 @@ input[type=checkbox] {
   font-size: 16px;
   max-width: 480px;
   width: 100%;
-  padding: 15px;
+  padding: 10px 15px;
   background: repeating-linear-gradient(45deg, #0d131b, #0d131b 10px, #101721 10px, #101721 20px);
   z-index: 1;
   box-sizing: border-box;
@@ -3443,17 +3451,7 @@ input[type=checkbox] {
   background: repeating-linear-gradient(45deg, #5c69c0, #5c69c0 10px, #43509b 10px, #43509b 20px);
 }
 
-.sort {
-  padding: 10px 15px;
-}
-.sort__items {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  position: relative;
-}
-.sort__games {
+.dropdown__games {
   border: 1px solid #5c5b5b;
   border-radius: 10px;
   background-color: #223146;
@@ -3463,11 +3461,11 @@ input[type=checkbox] {
   justify-content: center;
   align-items: center;
 }
-.sort__games-img {
+.dropdown__games-img {
   width: 20px;
   transform: rotate(90deg);
 }
-.sort__window {
+.dropdown__menu {
   position: absolute;
   right: 34px;
   top: 0;
@@ -3478,12 +3476,16 @@ input[type=checkbox] {
   padding: 15px;
   z-index: 2;
   transition: top 0.3s ease;
+  min-width: 140px;
 }
-.sort__gap {
+.dropdown__gap {
   gap: 15px;
   font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.sort__text {
+.dropdown__text {
   cursor: pointer;
 }
 

@@ -15,8 +15,8 @@ const newGameBtn = document.querySelector('.plus__new-game--btn');
 const newGameClose = document.querySelectorAll('.modal-cancel');
 const userResult = document.querySelector(".user_result");
 const cpuResult = document.querySelector(".cpu_result");
-const sortOpen = document.querySelector('.sortopen');
-const sortBtn = document.querySelector('.sort__games');
+const dropdownOpen = document.querySelector('.dropdownopen');
+const dropdownBtn = document.querySelector('.dropdown__games');
 const knbBody = document.querySelector('.knb__body');
 const newGameKnb = document.querySelector('.newknb');
 const windowPassword = document.querySelector('.window-password');
@@ -61,8 +61,8 @@ newGameClose.forEach(item => {
     });
 });
 
-sortBtn.addEventListener('click', function () {
-    sortOpen.classList.toggle('visible');
+dropdownBtn.addEventListener('click', function () {
+    dropdownOpen.classList.toggle('visible');
 });
 
 choiceHands.forEach(function (button) {
