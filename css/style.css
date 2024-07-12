@@ -1047,7 +1047,7 @@ input[type=checkbox] {
   width: 100%;
   margin: auto;
   overflow: hidden;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
 .slider-wrapper {
@@ -1095,13 +1095,15 @@ input[type=checkbox] {
 }
 
 /* Games Box */
-.games__box {
+.games {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+}
+.games__box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 15px;
 }
-
 .games__img {
   max-width: 130px;
   width: 100%;
@@ -1118,25 +1120,6 @@ input[type=checkbox] {
 }
 
 @media (max-width: 449px) {
-  .games__img {
-    max-width: 120px;
-  }
-  .games__box {
-    gap: 10px;
-  }
-}
-@media (max-width: 429px) {
-  .games__img {
-    max-width: 115px;
-  }
-  .games__box {
-    gap: 10px;
-  }
-}
-@media (max-width: 426px) {
-  .games__img {
-    max-width: 110px;
-  }
   .games__box {
     gap: 10px;
   }
@@ -1146,13 +1129,11 @@ input[type=checkbox] {
     max-width: 160px;
   }
   .games__box {
-    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
   }
 }
 @media (max-width: 370px) {
-  .games__img {
-    max-width: 140px;
-  }
   .games__box {
     gap: 20px;
   }
