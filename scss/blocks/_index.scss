@@ -102,18 +102,11 @@ input[type="checkbox"] {
 @media (max-width: 390px) {
 
     .games__img {
-        max-width: 160px;
+        max-width: 170px;
     }
 
     .games__box {
         grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
-    }
-}
-
-@media (max-width: 370px) {
-
-    .games__box {
         gap: 20px;
     }
 }
