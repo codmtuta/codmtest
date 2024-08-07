@@ -162,6 +162,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     if (textTitle1) textTitle1.style.display = 'block';
                     if (textTitle2) textTitle2.style.display = 'block';
                     if (headersImg) headersImg.style.display = 'flex';
+
                 }
             });
         });
@@ -170,6 +171,8 @@ document.addEventListener('DOMContentLoaded', function () {
     hidden('.toggleInput', '.textTitleOne', '.textTitleSum', '.knb__new-imgs', '.inputSum', '.textTitleTwo', '.textTitleThree');
 
     hidden('.toggleInput', null, '.textTitleSum', '.bones__new-img', '.inputSum', '.textTitleTwo', '.textTitleThree');
+
+    hidden('.toggleInput', '.textTitleOne', '.textTitleSum', '.fighting__choice-padding', '.inputSum', '.textTitleTwo', '.textTitleThree');
 
 });
 

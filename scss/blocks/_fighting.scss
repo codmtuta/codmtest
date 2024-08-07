@@ -1,0 +1,239 @@
+.fighting {
+    &__game {
+        border-radius: 10px;
+        border: 1px solid #5c5b5b;
+        padding: 5px;
+        margin: 10px 0;
+        background: #223146;
+        height: 100px;
+    }
+
+    &__game.active-bg {
+        background-image: url('/images/fighting/ring.jpg');
+        background-position: 50% 77%;
+        background-size: cover;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 15px;
+        padding: 5px 10px;
+        font-size: 14px;
+        font-weight: 700;
+        background: repeating-linear-gradient(45deg,
+                #bc6060,
+                #bc6060 10px,
+                #984646 10px,
+                #984646 20px);
+    }
+
+    &__bet {
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+    }
+
+    &__bet span {
+        padding-right: 5px;
+    }
+
+    &__closed {
+        padding-left: 5px;
+    }
+
+    &__item {
+        padding: 0 6px;
+        position: relative;
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    &__img {
+        width: 55px;
+        border-radius: 50%;
+    }
+
+    &__btn {
+        border: none;
+        border-radius: 10px;
+        background-color: transparent;
+    }
+
+    &__btn-animation {
+        width: 135px;
+        height: 30px;
+        border: none;
+        outline: none;
+        color: #fff;
+        background: #000000;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+    }
+
+    &__btn-animation::before {
+        content: '';
+        background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 2px);
+        height: calc(100% + 2px);
+        animation: glowing 20s linear infinite;
+        transition: opacity .3s ease-in-out;
+        border-radius: 11px;
+    }
+
+    &__btn-animation::after {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #111;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+    }
+
+    &__choice {
+        text-align: center;
+        padding: 5px 0;
+    }
+
+    &__choice-text {
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    &__choice-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        padding-top: 5px;
+    }
+
+    &__choice-padding {
+        padding-top: 10px;
+    }
+
+    &__choice-strike {
+        border: 1px solid #5c5b5b;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        padding: 2px 5px 8px;
+    }
+
+    &__choice-protection {
+        border: 1px solid #5c5b5b;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 2px 5px 8px;
+    }
+
+    &__choice-item {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+        padding-top: 5px;
+    }
+
+    &__choice-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 5px;
+        background: #354157;
+        width: 40px;
+        padding: 5px 0;
+    }
+
+    &__choice-btn.active {
+        background: #226eb9;
+    }
+
+    &__choice-name {
+        color: #fff;
+        font-size: 10px;
+    }
+
+    &__result {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 5px;
+        position: relative;
+    }
+
+    &__result-rival--img {
+        width: 55px;
+        border-radius: 50%;
+    }
+
+    &__result-img {
+        height: 67px;
+    }
+
+    &__result-rival {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__result-img--left {
+        position: absolute;
+        top: 7px;
+        right: calc(50% - 63px);
+        transform: translate(-50%, 0%);
+    }
+
+    &__result-img--right {
+        position: absolute;
+        top: 7px;
+        left: calc(50% + 12px);
+        transform: translate(-50%, 0%);
+    }
+
+    &__result-rival--defeat {
+        position: absolute;
+        top: 2px;
+        left: calc(50% - 12px);
+        transform: translate(-50%, 0%);
+    }
+
+    &__result-my {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__result-my--img {
+        width: 55px;
+        border-radius: 50%;
+    }
+
+    &__result-my--defeat {
+        position: absolute;
+        top: 2px;
+        left: calc(50% - 12px);
+        transform: translate(-50%, 0%);
+    }
+
+}

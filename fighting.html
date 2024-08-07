@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mclub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lunasima:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="shortcut icon" href="images/poker.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="container">
+        <div class="header__items">
+
+          <div class="header__logo">
+            <a class="header__logo-link" href="index.html">
+              <img src="images/logo__poker.png" alt="logo">
+            </a>
+          </div>
+
+          <div class="header__box">
+            <a class="header__box-money" href="wallet.html">
+              <img class="header__box-img" src="images/icons/color-usdt.png" alt="usdt">
+              <span class="header__box-balance format__number">10000</span>
+              <img class="header__box-btn" src="images/icons/plus.svg" alt="">
+            </a>
+
+            <div class="header__ava">
+              <a class="header__ava-link" href="account.html">
+                <img src="images/ava.jpg" alt="ava">
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main" style="padding: 115px 15px;">
+      <div class="container">
+
+        <div class="search__btn">
+          <div class="search__items">
+
+            <div class="game__counter">
+              <p class="game__counter-text">Доступные игры:
+              <p class="game__counter-num">10</p>
+              </p>
+            </div>
+
+            <div class=" dropdown">
+              <button class="dropdown__games">
+                <img src="./images/icons/arrow-switch.svg" alt="" class="dropdown__games-img">
+              </button>
+              <div class="modal dropdownopen">
+                <div class="dropdown__menu">
+                  <div class="dropdown__gap">
+                    <span class="dropdown__text">По умолчанию</span>
+                    <span class="dropdown__text">По возрастанию</span>
+                    <span class="dropdown__text">По убыванию</span>
+                    <span class="dropdown__text">Только мои игры</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fighting__games">
+          <div class="fighting__game">
+            <div class="fighting__header">
+              <span>UserName</span>
+              <div class="fighting__bet">
+                <span>Ставка:</span>
+                <span>10</span>$
+                <img class="fighting__closed" src="images/icons/lock.svg" alt="">
+              </div>
+            </div>
+
+            <div class="fighting__body">
+              <div class="fighting__item">
+                <img class="fighting__img" src="images/faces/ava-4.jpg" alt="">
+              </div>
+              <button class="fighting__btn spiner__btn play-game">
+                <div class="fighting__btn-animation">Ожидание игрока</div>
+              </button>
+            </div>
+
+            <div class="modal window-password">
+              <div class="modal-window window-height">
+                <h2 class="modal-title">Введите пароль</h2>
+                <input class="modal-input input-field" type="number">
+                <div class="modal-footer">
+                  <button class="modal-cancel">
+                    <div>Назад</div>
+                  </button>
+                  <button class="modal-create window-ok">
+                    <div>Ок</div>
+                  </button>
+                </div>
+              </div>
+              <div class="modal-blur"></div>
+            </div>
+
+            <div class="fighting__choice" style="display: none;">
+              <span class="fighting__choice-text">Выберите действия:</span>
+              <div class="fighting__choice-items">
+                <div class="fighting__choice-strike">
+                  <span class="fighting__choice-name">Удар:</span>
+                  <div class="fighting__choice-item">
+                    <button class="fighting__choice-btn fighting__choice-strike--head active">
+                      <span class="fighting__choice-name">Голова</span>
+                    </button>
+                    <button class="fighting__choice-btn fighting__choice-strike--body">
+                      <span class="fighting__choice-name">Торс</span>
+                    </button>
+                    <button class="fighting__choice-btn fighting__choice-strike--leg">
+                      <span class="fighting__choice-name">Ноги</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="fighting__choice-protection">
+                  <span class="fighting__choice-name">Защита:</span>
+                  <div class="fighting__choice-item">
+                    <button class="fighting__choice-btn fighting__choice-protection--head">
+                      <span class="fighting__choice-name">Голова</span>
+                    </button>
+                    <button class="fighting__choice-btn fighting__choice-protection--body active">
+                      <span class="fighting__choice-name">Торс</span>
+                    </button>
+                    <button class="fighting__choice-btn fighting__choice-protection--leg">
+                      <span class="fighting__choice-name">Ноги</span>
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="fighting__result" style="display: none;">
+
+              <div class="fighting__result-rival">
+                <img class="fighting__result-rival--img" src="images/faces/ava-4.jpg" alt="">
+                <div class="fighting__result-rival--box fighting__result-img--left">
+                  <img class="fighting__result-img fighting__result-rival--fixed" src="images/fighting/left-fixed.png"
+                    alt="" style="display: none;">
+
+                  <img class="fighting__result-img fighting__result-rival--strike--head"
+                    src="images/fighting/left-punch.gif" alt="" style="display: none;">
+                  <img class="fighting__result-img fighting__result-rival--strike--body"
+                    src="images/fighting/left-leg-kick.gif" alt="" style="display: none;">
+                  <img class="fighting__result-img fighting__result-rival--strike--leg"
+                    src="images/fighting/left-low-kick.gif" alt="" style="display: none;">
+
+                  <img class="fighting__result-img fighting__result-rival--protection--head"
+                    src="images/fighting/left-protection-head.gif" alt="" style="display: none;">
+                  <img class="fighting__result-img fighting__result-rival--protection--body"
+                    src="images/fighting/left-protection-body.gif" alt="" style="display: none;">
+                  <img class="fighting__result-img fighting__result-rival--protection--leg"
+                    src="images/fighting/left-protection-leg.gif" alt="" style="display: none;">
+
+                  <img class="fighting__result-img fighting__result-rival--walking"
+                    src="images/fighting/left-walking.gif" alt="" style="display: none;">
+
+                  <img class="fighting__result-img fighting__result-rival--loss" src="images/fighting/left-loss.gif"
+                    alt="" style="display: none;">
+                  <img class="fighting__result-img fighting__result-rival--win" src="images/fighting/left-win.gif"
+                    alt="" style="display: none;">
+                  <img class="fighting__result-img fighting__result-rival--draw" src="images/fighting/left-draw.gif"
+                    alt="" style="display: none;">
+                </div>
+              </div>
+              <div class="fighting__result-my">
+                <div class="fighting__result-my--box fighting__result-img--right">
+                  <img class="fighting__result-img fighting__result-my--fixed" src="images/fighting/right-fixed.png"
+                    alt="" style="display: none;">
+
+                  <img class="fighting__result-img fighting__result-my--strike--head"
+                    src="images/fighting/right-punch.gif" alt="" style="display: none;">
+                  <img class="fighting__result-img fighting__result-my--strike--body"
+                    src="images/fighting/right-leg-kick.gif" alt="" style="display: none;">
+                  <img class="fighting__result-img fighting__result-my--strike--leg"
+                    src="images/fighting/right-low-kick.gif" alt="" style="display: none;">
+
+                  <img class="fighting__result-img fighting__result-my--protection--head"
+                    src="images/fighting/right-protection-head.gif" alt="" style="display: none;">
+                  <img class="fighting__result-img fighting__result-my--protection--body"
+                    src="images/fighting/right-protection-body.gif" alt="" style="display: none;">
+                  <img class="fighting__result-img fighting__result-my--protection--leg"
+                    src="images/fighting/right-protection-leg.gif" alt="" style="display: none;">
+
+                  <img class="fighting__result-img fighting__result-my--walking" src="images/fighting/right-walking.gif"
+                    alt="" style="display: none;">
+
+                  <img class="fighting__result-img fighting__result-my--loss" src="images/fighting/rigth-loss.gif"
+                    alt="" style="display: none;">
+                  <img class="fighting__result-img fighting__result-my--win" src="images/fighting/right-win.gif" alt=""
+                    style="display: none;">
+                  <img class="fighting__result-img fighting__result-my--draw" src="images/fighting/right-draw.gif"
+                    alt="" style="display: none;">
+                </div>
+                <img class="fighting__result-my--img" src="images/ava.jpg" alt="">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="modal newfighting">
+          <div class="modal-window window-height">
+
+            <div class="modal-dialog">
+              <div class="fighting__new-gesture">
+                <span class="modal-text textTitleOne">Выберите действия:</span>
+                <span class="modal-text textTitleSum">Колличестов игр:</span>
+                <input class="modal-input input-field inputSum" type="number" placeholder="Макс. игр 10">
+                <div class="fighting__choice-items fighting__choice-padding">
+                  <div class="fighting__choice-strike">
+                    <span class="fighting__choice-name">Удар:</span>
+                    <div class="fighting__choice-item">
+                      <button class="fighting__choice-btn fighting__choice-strike--head active">
+                        <span class="fighting__choice-name">Голова</span>
+                      </button>
+                      <button class="fighting__choice-btn fighting__choice-strike--body">
+                        <span class="fighting__choice-name">Торс</span>
+                      </button>
+                      <button class="fighting__choice-btn fighting__choice-strike--leg">
+                        <span class="fighting__choice-name">Ноги</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="fighting__choice-protection">
+                    <span class="fighting__choice-name">Защита:</span>
+                    <div class="fighting__choice-item">
+                      <button class="fighting__choice-btn fighting__choice-protection--head">
+                        <span class="fighting__choice-name">Голова</span>
+                      </button>
+                      <button class="fighting__choice-btn fighting__choice-protection--body active">
+                        <span class="fighting__choice-name">Торс</span>
+                      </button>
+                      <button class="fighting__choice-btn fighting__choice-protection--leg">
+                        <span class="fighting__choice-name">Ноги</span>
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-body">
+              <span class="modal-text textTitleTwo">Укажите ставку:</span>
+              <span class="modal-text textTitleThree">Сумма ставок:</span>
+              <input class="modal-input input-field" type="number" placeholder="Минимальная ставка 1$">
+              <div class="modal-btn">
+                <button class="modal-button active-bet">1$</button>
+                <button class="modal-button">2$</button>
+                <button class="modal-button">5$</button>
+                <button class="modal-button">10$</button>
+                <button class="modal-button">20$</button>
+              </div>
+            </div>
+
+            <div class="toggle-switch">
+              <span>Несколько игр:</span>
+              <label class="toggle-switch__label">
+                <input class="toggleInput" type="checkbox">
+                <span class="toggle-switch__slider round"></span>
+              </label>
+            </div>
+
+            <div class="fighting__private">
+              <div class="toggle-switch">
+                <span>Приватная игра:</span>
+                <label class="toggle-switch__label">
+                  <input class="modal__private-checkbox toggleCheckbox" type="checkbox">
+                  <span class="toggle-switch__slider round"></span>
+                </label>
+              </div>
+              <input class="modal__private-input hidden-input input-field" type="number" placeholder="Введите пароль">
+            </div>
+
+            <div class="modal-footer">
+              <button class="modal-cancel">
+                <div>Отмена</div>
+              </button>
+              <button class="modal-create">
+                <div>Создать</div>
+              </button>
+            </div>
+
+          </div>
+          <div class="modal-blur"></div>
+        </div>
+
+        <div class="plus__new-game pointcursor">
+          <img class="plus__new-game--btn" src="images/icons/button-plus.svg" alt="">
+        </div>
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <nav class="navbar">
+          <div class="navbar__items">
+
+            <ul class="navbar__nav">
+              <li class="navbar__item">
+                <a class="navbar__link" href="index.html">
+                  <img class="navbar__img" src="images/icons/home.svg" alt="home">
+                  <p class="navbar__text">Главная</p>
+                </a>
+              </li>
+
+              <li class="navbar__item">
+                <a class="navbar__link" href="wallet.html">
+                  <img class="navbar__img" src="images/icons/wallet.svg" alt="wallet">
+                  <p class="navbar__text">Кошелек</p>
+                </a>
+              </li>
+
+              <li class="navbar__item">
+                <a class="navbar__link" href="story.html">
+                  <img class="navbar__img" src="images/icons/work-history.svg" alt="story">
+                  <p class="navbar__text">История</p>
+                </a>
+              </li>
+
+              <li class="navbar__item">
+                <a class="navbar__link" href="account.html">
+                  <img class="navbar__img" src="images/icons/account.svg" alt="account">
+                  <p class="navbar__text">Профиль</p>
+                </a>
+              </li>
+
+              <!-- <li class="navbat__item">
+                <div class="menu__btn">
+                  <img class="navbar__img" src="images/icons/burger-menu.svg" alt="menu">
+                  <p class="navbar__text">Меню</p>
+                </div>
+              </li> -->
+            </ul>
+          </div>
+        </nav>
+
+        <div class="menu__items">
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                <img class="menu__img" src="images/icons/setting.svg" alt="menu">
+                <p>Меню1</p>
+              </a>
+            </li>
+
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                <img class="menu__img" src="images/icons/setting.svg" alt="menu">
+                <p>Меню2</p>
+              </a>
+            </li>
+
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                <img class="menu__img" src="images/icons/setting.svg" alt="menu">
+                <p>Меню3</p>
+              </a>
+            </li>
+
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                <img class="menu__img" src="images/icons/setting.svg" alt="menu">
+                <p>Меню4</p>
+              </a>
+            </li>
+
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                <img class="menu__img" src="images/icons/setting.svg" alt="menu">
+                <p>Меню5</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </footer>
+
+  </div>
+  <script type="text/javascript" src="js/fighting.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
