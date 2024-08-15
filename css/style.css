@@ -3465,6 +3465,50 @@ input[type=checkbox] {
   cursor: pointer;
 }
 
+.sort {
+  padding: 10px 15px;
+}
+.sort__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+.sort__games {
+  border: 1px solid #5c5b5b;
+  border-radius: 10px;
+  background-color: #223146;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sort__games-img {
+  width: 20px;
+  transform: rotate(90deg);
+}
+.sort__window {
+  position: absolute;
+  right: 34px;
+  top: 0;
+  background-color: #223146;
+  max-width: 160px;
+  border: 1px solid #5c5b5b;
+  border-radius: 15px;
+  padding: 15px;
+  z-index: 2;
+  transition: top 0.3s ease;
+}
+.sort__gap {
+  gap: 15px;
+  font-size: 16px;
+}
+.sort__text {
+  cursor: pointer;
+}
+
 .toggle-switch {
   display: flex;
   align-items: center;
