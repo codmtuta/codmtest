@@ -3670,7 +3670,7 @@ input:checked + .toggle-switch__slider:before {
 }
 .fighting__choice {
   text-align: center;
-  padding: 5px 0;
+  padding: 4px 0;
 }
 .fighting__choice-text {
   font-size: 14px;
@@ -3716,6 +3716,22 @@ input:checked + .toggle-switch__slider:before {
 }
 .fighting__choice-btn.active {
   background: #226eb9;
+}
+.fighting__choice-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fighting__button {
+  border: none;
+  border-radius: 15px;
+  background: #226eb9;
+  color: #fff;
+  width: 67px;
+  font-size: 10px;
+}
+.fighting__choice-btn--back {
+  background-color: #555972;
 }
 .fighting__choice-name {
   color: #fff;

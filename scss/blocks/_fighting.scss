@@ -113,7 +113,7 @@
 
     &__choice {
         text-align: center;
-        padding: 5px 0;
+        padding: 4px 0;
     }
 
     &__choice-text {
@@ -167,6 +167,25 @@
 
     &__choice-btn.active {
         background: #226eb9;
+    }
+
+    &__choice-navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__button {
+        border: none;
+        border-radius: 15px;
+        background: #226eb9;
+        color: #fff;
+        width: 67px;
+        font-size: 10px;
+    }
+
+    &__choice-btn--back {
+        background-color: #555972;
     }
 
     &__choice-name {

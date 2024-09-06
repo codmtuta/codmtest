@@ -73,7 +73,7 @@
           </div>
         </div>
         <div class="fighting__games">
-          <div class="fighting__game active-bg">
+          <div class="fighting__game">
             <div class="fighting__header">
               <span>UserName</span>
               <div class="fighting__bet">
@@ -108,8 +108,14 @@
               <div class="modal-blur"></div>
             </div>
 
-            <div class="fighting__choice" style="display: none;">
-              <span class="fighting__choice-text">Выберите действия:</span>
+            <div class="fighting__choice">
+
+              <div class="fighting__choice-navigation">
+                <button class="fighting__button fighting__choice-btn--back">назад</button>
+                <span class="fighting__choice-text">Выберите действия:</span>
+                <button class="fighting__button fighting__choice-btn--next">начать бой</button>
+              </div>
+
               <div class="fighting__choice-items">
                 <div class="fighting__choice-strike">
                   <span class="fighting__choice-name">Удар:</span>
@@ -144,7 +150,7 @@
               </div>
             </div>
 
-            <div class="fighting__result">
+            <div class="fighting__result" style="display: none;">
 
               <div class="fighting__result-rival">
                 <img class="fighting__result-rival--img" src="images/faces/ava-4.jpg" alt="">
